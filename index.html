@@ -1,655 +1,926 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width" />
-    
-    
-    
-    <title>CV Jean Paul Rojas</title>
-    <link rel="shortcut icon" href="./src/assets/images/favicons/favicon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite + React + TS</title>
-    <style
-      data-href="https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i"
-    >
-      @font-face {
-        font-family: 'Poppins';
-        font-style: italic;
-        font-weight: 100;
-        src: url(https://fonts.gstatic.com/s/poppins/v20/pxiAyp8kv8JHgFVrJJLmE0tCMPQ.woff)
-          format('woff');
-      }
-      @font-face {
-        font-family: 'Poppins';
-        font-style: italic;
-        font-weight: 200;
-        src: url(https://fonts.gstatic.com/s/poppins/v20/pxiDyp8kv8JHgFVrJJLmv1pVF9eI.woff)
-          format('woff');
-      }
-      @font-face {
-        font-family: 'Poppins';
-        font-style: italic;
-        font-weight: 300;
-        src: url(https://fonts.gstatic.com/s/poppins/v20/pxiDyp8kv8JHgFVrJJLm21lVF9eI.woff)
-          format('woff');
-      }
-      @font-face {
-        font-family: 'Poppins';
-        font-style: italic;
-        font-weight: 400;
-        src: url(https://fonts.gstatic.com/s/poppins/v20/pxiGyp8kv8JHgFVrJJLucHtG.woff)
-          format('woff');
-      }
-      @font-face {
-        font-family: 'Poppins';
-        font-style: italic;
-        font-weight: 500;
-        src: url(https://fonts.gstatic.com/s/poppins/v20/pxiDyp8kv8JHgFVrJJLmg1hVF9eI.woff)
-          format('woff');
-      }
-      @font-face {
-        font-family: 'Poppins';
-        font-style: italic;
-        font-weight: 600;
-        src: url(https://fonts.gstatic.com/s/poppins/v20/pxiDyp8kv8JHgFVrJJLmr19VF9eI.woff)
-          format('woff');
-      }
-      @font-face {
-        font-family: 'Poppins';
-        font-style: italic;
-        font-weight: 700;
-        src: url(https://fonts.gstatic.com/s/poppins/v20/pxiDyp8kv8JHgFVrJJLmy15VF9eI.woff)
-          format('woff');
-      }
-      @font-face {
-        font-family: 'Poppins';
-        font-style: italic;
-        font-weight: 800;
-        src: url(https://fonts.gstatic.com/s/poppins/v20/pxiDyp8kv8JHgFVrJJLm111VF9eI.woff)
-          format('woff');
-      }
-      @font-face {
-        font-family: 'Poppins';
-        font-style: italic;
-        font-weight: 900;
-        src: url(https://fonts.gstatic.com/s/poppins/v20/pxiDyp8kv8JHgFVrJJLm81xVF9eI.woff)
-          format('woff');
-      }
-      @font-face {
-        font-family: 'Poppins';
-        font-style: normal;
-        font-weight: 100;
-        src: url(https://fonts.gstatic.com/s/poppins/v20/pxiGyp8kv8JHgFVrLPTucHtG.woff)
-          format('woff');
-      }
-      @font-face {
-        font-family: 'Poppins';
-        font-style: normal;
-        font-weight: 200;
-        src: url(https://fonts.gstatic.com/s/poppins/v20/pxiByp8kv8JHgFVrLFj_Z1xlEw.woff)
-          format('woff');
-      }
-      @font-face {
-        font-family: 'Poppins';
-        font-style: normal;
-        font-weight: 300;
-        src: url(https://fonts.gstatic.com/s/poppins/v20/pxiByp8kv8JHgFVrLDz8Z1xlEw.woff)
-          format('woff');
-      }
-      @font-face {
-        font-family: 'Poppins';
-        font-style: normal;
-        font-weight: 400;
-        src: url(https://fonts.gstatic.com/s/poppins/v20/pxiEyp8kv8JHgFVrJJfedA.woff)
-          format('woff');
-      }
-      @font-face {
-        font-family: 'Poppins';
-        font-style: normal;
-        font-weight: 500;
-        src: url(https://fonts.gstatic.com/s/poppins/v20/pxiByp8kv8JHgFVrLGT9Z1xlEw.woff)
-          format('woff');
-      }
-      @font-face {
-        font-family: 'Poppins';
-        font-style: normal;
-        font-weight: 600;
-        src: url(https://fonts.gstatic.com/s/poppins/v20/pxiByp8kv8JHgFVrLEj6Z1xlEw.woff)
-          format('woff');
-      }
-      @font-face {
-        font-family: 'Poppins';
-        font-style: normal;
-        font-weight: 700;
-        src: url(https://fonts.gstatic.com/s/poppins/v20/pxiByp8kv8JHgFVrLCz7Z1xlEw.woff)
-          format('woff');
-      }
-      @font-face {
-        font-family: 'Poppins';
-        font-style: normal;
-        font-weight: 800;
-        src: url(https://fonts.gstatic.com/s/poppins/v20/pxiByp8kv8JHgFVrLDD4Z1xlEw.woff)
-          format('woff');
-      }
-      @font-face {
-        font-family: 'Poppins';
-        font-style: normal;
-        font-weight: 900;
-        src: url(https://fonts.gstatic.com/s/poppins/v20/pxiByp8kv8JHgFVrLBT5Z1xlEw.woff)
-          format('woff');
-      }
-      @font-face {
-        font-family: 'Poppins';
-        font-style: italic;
-        font-weight: 100;
-        src: url(https://fonts.gstatic.com/s/poppins/v20/pxiAyp8kv8JHgFVrJJLmE0tDMPKhSkFEkm8.woff2)
-          format('woff2');
-        unicode-range: U+0900-097F, U+1CD0-1CF6, U+1CF8-1CF9, U+200C-200D,
-          U+20A8, U+20B9, U+25CC, U+A830-A839, U+A8E0-A8FB;
-      }
-      @font-face {
-        font-family: 'Poppins';
-        font-style: italic;
-        font-weight: 100;
-        src: url(https://fonts.gstatic.com/s/poppins/v20/pxiAyp8kv8JHgFVrJJLmE0tMMPKhSkFEkm8.woff2)
-          format('woff2');
-        unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB,
-          U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
-      }
-      @font-face {
-        font-family: 'Poppins';
-        font-style: italic;
-        font-weight: 100;
-        src: url(https://fonts.gstatic.com/s/poppins/v20/pxiAyp8kv8JHgFVrJJLmE0tCMPKhSkFE.woff2)
-          format('woff2');
-        unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6,
-          U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193,
-          U+2212, U+2215, U+FEFF, U+FFFD;
-      }
-      @font-face {
-        font-family: 'Poppins';
-        font-style: italic;
-        font-weight: 200;
-        src: url(https://fonts.gstatic.com/s/poppins/v20/pxiDyp8kv8JHgFVrJJLmv1pVFteOYktMqlap.woff2)
-          format('woff2');
-        unicode-range: U+0900-097F, U+1CD0-1CF6, U+1CF8-1CF9, U+200C-200D,
-          U+20A8, U+20B9, U+25CC, U+A830-A839, U+A8E0-A8FB;
-      }
-      @font-face {
-        font-family: 'Poppins';
-        font-style: italic;
-        font-weight: 200;
-        src: url(https://fonts.gstatic.com/s/poppins/v20/pxiDyp8kv8JHgFVrJJLmv1pVGdeOYktMqlap.woff2)
-          format('woff2');
-        unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB,
-          U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
-      }
-      @font-face {
-        font-family: 'Poppins';
-        font-style: italic;
-        font-weight: 200;
-        src: url(https://fonts.gstatic.com/s/poppins/v20/pxiDyp8kv8JHgFVrJJLmv1pVF9eOYktMqg.woff2)
-          format('woff2');
-        unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6,
-          U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193,
-          U+2212, U+2215, U+FEFF, U+FFFD;
-      }
-      @font-face {
-        font-family: 'Poppins';
-        font-style: italic;
-        font-weight: 300;
-        src: url(https://fonts.gstatic.com/s/poppins/v20/pxiDyp8kv8JHgFVrJJLm21lVFteOYktMqlap.woff2)
-          format('woff2');
-        unicode-range: U+0900-097F, U+1CD0-1CF6, U+1CF8-1CF9, U+200C-200D,
-          U+20A8, U+20B9, U+25CC, U+A830-A839, U+A8E0-A8FB;
-      }
-      @font-face {
-        font-family: 'Poppins';
-        font-style: italic;
-        font-weight: 300;
-        src: url(https://fonts.gstatic.com/s/poppins/v20/pxiDyp8kv8JHgFVrJJLm21lVGdeOYktMqlap.woff2)
-          format('woff2');
-        unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB,
-          U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
-      }
-      @font-face {
-        font-family: 'Poppins';
-        font-style: italic;
-        font-weight: 300;
-        src: url(https://fonts.gstatic.com/s/poppins/v20/pxiDyp8kv8JHgFVrJJLm21lVF9eOYktMqg.woff2)
-          format('woff2');
-        unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6,
-          U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193,
-          U+2212, U+2215, U+FEFF, U+FFFD;
-      }
-      @font-face {
-        font-family: 'Poppins';
-        font-style: italic;
-        font-weight: 400;
-        src: url(https://fonts.gstatic.com/s/poppins/v20/pxiGyp8kv8JHgFVrJJLucXtAOvWDSHFF.woff2)
-          format('woff2');
-        unicode-range: U+0900-097F, U+1CD0-1CF6, U+1CF8-1CF9, U+200C-200D,
-          U+20A8, U+20B9, U+25CC, U+A830-A839, U+A8E0-A8FB;
-      }
-      @font-face {
-        font-family: 'Poppins';
-        font-style: italic;
-        font-weight: 400;
-        src: url(https://fonts.gstatic.com/s/poppins/v20/pxiGyp8kv8JHgFVrJJLufntAOvWDSHFF.woff2)
-          format('woff2');
-        unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB,
-          U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
-      }
-      @font-face {
-        font-family: 'Poppins';
-        font-style: italic;
-        font-weight: 400;
-        src: url(https://fonts.gstatic.com/s/poppins/v20/pxiGyp8kv8JHgFVrJJLucHtAOvWDSA.woff2)
-          format('woff2');
-        unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6,
-          U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193,
-          U+2212, U+2215, U+FEFF, U+FFFD;
-      }
-      @font-face {
-        font-family: 'Poppins';
-        font-style: italic;
-        font-weight: 500;
-        src: url(https://fonts.gstatic.com/s/poppins/v20/pxiDyp8kv8JHgFVrJJLmg1hVFteOYktMqlap.woff2)
-          format('woff2');
-        unicode-range: U+0900-097F, U+1CD0-1CF6, U+1CF8-1CF9, U+200C-200D,
-          U+20A8, U+20B9, U+25CC, U+A830-A839, U+A8E0-A8FB;
-      }
-      @font-face {
-        font-family: 'Poppins';
-        font-style: italic;
-        font-weight: 500;
-        src: url(https://fonts.gstatic.com/s/poppins/v20/pxiDyp8kv8JHgFVrJJLmg1hVGdeOYktMqlap.woff2)
-          format('woff2');
-        unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB,
-          U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
-      }
-      @font-face {
-        font-family: 'Poppins';
-        font-style: italic;
-        font-weight: 500;
-        src: url(https://fonts.gstatic.com/s/poppins/v20/pxiDyp8kv8JHgFVrJJLmg1hVF9eOYktMqg.woff2)
-          format('woff2');
-        unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6,
-          U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193,
-          U+2212, U+2215, U+FEFF, U+FFFD;
-      }
-      @font-face {
-        font-family: 'Poppins';
-        font-style: italic;
-        font-weight: 600;
-        src: url(https://fonts.gstatic.com/s/poppins/v20/pxiDyp8kv8JHgFVrJJLmr19VFteOYktMqlap.woff2)
-          format('woff2');
-        unicode-range: U+0900-097F, U+1CD0-1CF6, U+1CF8-1CF9, U+200C-200D,
-          U+20A8, U+20B9, U+25CC, U+A830-A839, U+A8E0-A8FB;
-      }
-      @font-face {
-        font-family: 'Poppins';
-        font-style: italic;
-        font-weight: 600;
-        src: url(https://fonts.gstatic.com/s/poppins/v20/pxiDyp8kv8JHgFVrJJLmr19VGdeOYktMqlap.woff2)
-          format('woff2');
-        unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB,
-          U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
-      }
-      @font-face {
-        font-family: 'Poppins';
-        font-style: italic;
-        font-weight: 600;
-        src: url(https://fonts.gstatic.com/s/poppins/v20/pxiDyp8kv8JHgFVrJJLmr19VF9eOYktMqg.woff2)
-          format('woff2');
-        unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6,
-          U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193,
-          U+2212, U+2215, U+FEFF, U+FFFD;
-      }
-      @font-face {
-        font-family: 'Poppins';
-        font-style: italic;
-        font-weight: 700;
-        src: url(https://fonts.gstatic.com/s/poppins/v20/pxiDyp8kv8JHgFVrJJLmy15VFteOYktMqlap.woff2)
-          format('woff2');
-        unicode-range: U+0900-097F, U+1CD0-1CF6, U+1CF8-1CF9, U+200C-200D,
-          U+20A8, U+20B9, U+25CC, U+A830-A839, U+A8E0-A8FB;
-      }
-      @font-face {
-        font-family: 'Poppins';
-        font-style: italic;
-        font-weight: 700;
-        src: url(https://fonts.gstatic.com/s/poppins/v20/pxiDyp8kv8JHgFVrJJLmy15VGdeOYktMqlap.woff2)
-          format('woff2');
-        unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB,
-          U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
-      }
-      @font-face {
-        font-family: 'Poppins';
-        font-style: italic;
-        font-weight: 700;
-        src: url(https://fonts.gstatic.com/s/poppins/v20/pxiDyp8kv8JHgFVrJJLmy15VF9eOYktMqg.woff2)
-          format('woff2');
-        unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6,
-          U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193,
-          U+2212, U+2215, U+FEFF, U+FFFD;
-      }
-      @font-face {
-        font-family: 'Poppins';
-        font-style: italic;
-        font-weight: 800;
-        src: url(https://fonts.gstatic.com/s/poppins/v20/pxiDyp8kv8JHgFVrJJLm111VFteOYktMqlap.woff2)
-          format('woff2');
-        unicode-range: U+0900-097F, U+1CD0-1CF6, U+1CF8-1CF9, U+200C-200D,
-          U+20A8, U+20B9, U+25CC, U+A830-A839, U+A8E0-A8FB;
-      }
-      @font-face {
-        font-family: 'Poppins';
-        font-style: italic;
-        font-weight: 800;
-        src: url(https://fonts.gstatic.com/s/poppins/v20/pxiDyp8kv8JHgFVrJJLm111VGdeOYktMqlap.woff2)
-          format('woff2');
-        unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB,
-          U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
-      }
-      @font-face {
-        font-family: 'Poppins';
-        font-style: italic;
-        font-weight: 800;
-        src: url(https://fonts.gstatic.com/s/poppins/v20/pxiDyp8kv8JHgFVrJJLm111VF9eOYktMqg.woff2)
-          format('woff2');
-        unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6,
-          U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193,
-          U+2212, U+2215, U+FEFF, U+FFFD;
-      }
-      @font-face {
-        font-family: 'Poppins';
-        font-style: italic;
-        font-weight: 900;
-        src: url(https://fonts.gstatic.com/s/poppins/v20/pxiDyp8kv8JHgFVrJJLm81xVFteOYktMqlap.woff2)
-          format('woff2');
-        unicode-range: U+0900-097F, U+1CD0-1CF6, U+1CF8-1CF9, U+200C-200D,
-          U+20A8, U+20B9, U+25CC, U+A830-A839, U+A8E0-A8FB;
-      }
-      @font-face {
-        font-family: 'Poppins';
-        font-style: italic;
-        font-weight: 900;
-        src: url(https://fonts.gstatic.com/s/poppins/v20/pxiDyp8kv8JHgFVrJJLm81xVGdeOYktMqlap.woff2)
-          format('woff2');
-        unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB,
-          U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
-      }
-      @font-face {
-        font-family: 'Poppins';
-        font-style: italic;
-        font-weight: 900;
-        src: url(https://fonts.gstatic.com/s/poppins/v20/pxiDyp8kv8JHgFVrJJLm81xVF9eOYktMqg.woff2)
-          format('woff2');
-        unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6,
-          U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193,
-          U+2212, U+2215, U+FEFF, U+FFFD;
-      }
-      @font-face {
-        font-family: 'Poppins';
-        font-style: normal;
-        font-weight: 100;
-        src: url(https://fonts.gstatic.com/s/poppins/v20/pxiGyp8kv8JHgFVrLPTucXtAOvWDSHFF.woff2)
-          format('woff2');
-        unicode-range: U+0900-097F, U+1CD0-1CF6, U+1CF8-1CF9, U+200C-200D,
-          U+20A8, U+20B9, U+25CC, U+A830-A839, U+A8E0-A8FB;
-      }
-      @font-face {
-        font-family: 'Poppins';
-        font-style: normal;
-        font-weight: 100;
-        src: url(https://fonts.gstatic.com/s/poppins/v20/pxiGyp8kv8JHgFVrLPTufntAOvWDSHFF.woff2)
-          format('woff2');
-        unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB,
-          U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
-      }
-      @font-face {
-        font-family: 'Poppins';
-        font-style: normal;
-        font-weight: 100;
-        src: url(https://fonts.gstatic.com/s/poppins/v20/pxiGyp8kv8JHgFVrLPTucHtAOvWDSA.woff2)
-          format('woff2');
-        unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6,
-          U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193,
-          U+2212, U+2215, U+FEFF, U+FFFD;
-      }
-      @font-face {
-        font-family: 'Poppins';
-        font-style: normal;
-        font-weight: 200;
-        src: url(https://fonts.gstatic.com/s/poppins/v20/pxiByp8kv8JHgFVrLFj_Z11lFd2JQEl8qw.woff2)
-          format('woff2');
-        unicode-range: U+0900-097F, U+1CD0-1CF6, U+1CF8-1CF9, U+200C-200D,
-          U+20A8, U+20B9, U+25CC, U+A830-A839, U+A8E0-A8FB;
-      }
-      @font-face {
-        font-family: 'Poppins';
-        font-style: normal;
-        font-weight: 200;
-        src: url(https://fonts.gstatic.com/s/poppins/v20/pxiByp8kv8JHgFVrLFj_Z1JlFd2JQEl8qw.woff2)
-          format('woff2');
-        unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB,
-          U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
-      }
-      @font-face {
-        font-family: 'Poppins';
-        font-style: normal;
-        font-weight: 200;
-        src: url(https://fonts.gstatic.com/s/poppins/v20/pxiByp8kv8JHgFVrLFj_Z1xlFd2JQEk.woff2)
-          format('woff2');
-        unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6,
-          U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193,
-          U+2212, U+2215, U+FEFF, U+FFFD;
-      }
-      @font-face {
-        font-family: 'Poppins';
-        font-style: normal;
-        font-weight: 300;
-        src: url(https://fonts.gstatic.com/s/poppins/v20/pxiByp8kv8JHgFVrLDz8Z11lFd2JQEl8qw.woff2)
-          format('woff2');
-        unicode-range: U+0900-097F, U+1CD0-1CF6, U+1CF8-1CF9, U+200C-200D,
-          U+20A8, U+20B9, U+25CC, U+A830-A839, U+A8E0-A8FB;
-      }
-      @font-face {
-        font-family: 'Poppins';
-        font-style: normal;
-        font-weight: 300;
-        src: url(https://fonts.gstatic.com/s/poppins/v20/pxiByp8kv8JHgFVrLDz8Z1JlFd2JQEl8qw.woff2)
-          format('woff2');
-        unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB,
-          U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
-      }
-      @font-face {
-        font-family: 'Poppins';
-        font-style: normal;
-        font-weight: 300;
-        src: url(https://fonts.gstatic.com/s/poppins/v20/pxiByp8kv8JHgFVrLDz8Z1xlFd2JQEk.woff2)
-          format('woff2');
-        unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6,
-          U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193,
-          U+2212, U+2215, U+FEFF, U+FFFD;
-      }
-      @font-face {
-        font-family: 'Poppins';
-        font-style: normal;
-        font-weight: 400;
-        src: url(https://fonts.gstatic.com/s/poppins/v20/pxiEyp8kv8JHgFVrJJbecnFHGPezSQ.woff2)
-          format('woff2');
-        unicode-range: U+0900-097F, U+1CD0-1CF6, U+1CF8-1CF9, U+200C-200D,
-          U+20A8, U+20B9, U+25CC, U+A830-A839, U+A8E0-A8FB;
-      }
-      @font-face {
-        font-family: 'Poppins';
-        font-style: normal;
-        font-weight: 400;
-        src: url(https://fonts.gstatic.com/s/poppins/v20/pxiEyp8kv8JHgFVrJJnecnFHGPezSQ.woff2)
-          format('woff2');
-        unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB,
-          U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
-      }
-      @font-face {
-        font-family: 'Poppins';
-        font-style: normal;
-        font-weight: 400;
-        src: url(https://fonts.gstatic.com/s/poppins/v20/pxiEyp8kv8JHgFVrJJfecnFHGPc.woff2)
-          format('woff2');
-        unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6,
-          U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193,
-          U+2212, U+2215, U+FEFF, U+FFFD;
-      }
-      @font-face {
-        font-family: 'Poppins';
-        font-style: normal;
-        font-weight: 500;
-        src: url(https://fonts.gstatic.com/s/poppins/v20/pxiByp8kv8JHgFVrLGT9Z11lFd2JQEl8qw.woff2)
-          format('woff2');
-        unicode-range: U+0900-097F, U+1CD0-1CF6, U+1CF8-1CF9, U+200C-200D,
-          U+20A8, U+20B9, U+25CC, U+A830-A839, U+A8E0-A8FB;
-      }
-      @font-face {
-        font-family: 'Poppins';
-        font-style: normal;
-        font-weight: 500;
-        src: url(https://fonts.gstatic.com/s/poppins/v20/pxiByp8kv8JHgFVrLGT9Z1JlFd2JQEl8qw.woff2)
-          format('woff2');
-        unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB,
-          U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
-      }
-      @font-face {
-        font-family: 'Poppins';
-        font-style: normal;
-        font-weight: 500;
-        src: url(https://fonts.gstatic.com/s/poppins/v20/pxiByp8kv8JHgFVrLGT9Z1xlFd2JQEk.woff2)
-          format('woff2');
-        unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6,
-          U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193,
-          U+2212, U+2215, U+FEFF, U+FFFD;
-      }
-      @font-face {
-        font-family: 'Poppins';
-        font-style: normal;
-        font-weight: 600;
-        src: url(https://fonts.gstatic.com/s/poppins/v20/pxiByp8kv8JHgFVrLEj6Z11lFd2JQEl8qw.woff2)
-          format('woff2');
-        unicode-range: U+0900-097F, U+1CD0-1CF6, U+1CF8-1CF9, U+200C-200D,
-          U+20A8, U+20B9, U+25CC, U+A830-A839, U+A8E0-A8FB;
-      }
-      @font-face {
-        font-family: 'Poppins';
-        font-style: normal;
-        font-weight: 600;
-        src: url(https://fonts.gstatic.com/s/poppins/v20/pxiByp8kv8JHgFVrLEj6Z1JlFd2JQEl8qw.woff2)
-          format('woff2');
-        unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB,
-          U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
-      }
-      @font-face {
-        font-family: 'Poppins';
-        font-style: normal;
-        font-weight: 600;
-        src: url(https://fonts.gstatic.com/s/poppins/v20/pxiByp8kv8JHgFVrLEj6Z1xlFd2JQEk.woff2)
-          format('woff2');
-        unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6,
-          U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193,
-          U+2212, U+2215, U+FEFF, U+FFFD;
-      }
-      @font-face {
-        font-family: 'Poppins';
-        font-style: normal;
-        font-weight: 700;
-        src: url(https://fonts.gstatic.com/s/poppins/v20/pxiByp8kv8JHgFVrLCz7Z11lFd2JQEl8qw.woff2)
-          format('woff2');
-        unicode-range: U+0900-097F, U+1CD0-1CF6, U+1CF8-1CF9, U+200C-200D,
-          U+20A8, U+20B9, U+25CC, U+A830-A839, U+A8E0-A8FB;
-      }
-      @font-face {
-        font-family: 'Poppins';
-        font-style: normal;
-        font-weight: 700;
-        src: url(https://fonts.gstatic.com/s/poppins/v20/pxiByp8kv8JHgFVrLCz7Z1JlFd2JQEl8qw.woff2)
-          format('woff2');
-        unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB,
-          U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
-      }
-      @font-face {
-        font-family: 'Poppins';
-        font-style: normal;
-        font-weight: 700;
-        src: url(https://fonts.gstatic.com/s/poppins/v20/pxiByp8kv8JHgFVrLCz7Z1xlFd2JQEk.woff2)
-          format('woff2');
-        unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6,
-          U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193,
-          U+2212, U+2215, U+FEFF, U+FFFD;
-      }
-      @font-face {
-        font-family: 'Poppins';
-        font-style: normal;
-        font-weight: 800;
-        src: url(https://fonts.gstatic.com/s/poppins/v20/pxiByp8kv8JHgFVrLDD4Z11lFd2JQEl8qw.woff2)
-          format('woff2');
-        unicode-range: U+0900-097F, U+1CD0-1CF6, U+1CF8-1CF9, U+200C-200D,
-          U+20A8, U+20B9, U+25CC, U+A830-A839, U+A8E0-A8FB;
-      }
-      @font-face {
-        font-family: 'Poppins';
-        font-style: normal;
-        font-weight: 800;
-        src: url(https://fonts.gstatic.com/s/poppins/v20/pxiByp8kv8JHgFVrLDD4Z1JlFd2JQEl8qw.woff2)
-          format('woff2');
-        unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB,
-          U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
-      }
-      @font-face {
-        font-family: 'Poppins';
-        font-style: normal;
-        font-weight: 800;
-        src: url(https://fonts.gstatic.com/s/poppins/v20/pxiByp8kv8JHgFVrLDD4Z1xlFd2JQEk.woff2)
-          format('woff2');
-        unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6,
-          U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193,
-          U+2212, U+2215, U+FEFF, U+FFFD;
-      }
-      @font-face {
-        font-family: 'Poppins';
-        font-style: normal;
-        font-weight: 900;
-        src: url(https://fonts.gstatic.com/s/poppins/v20/pxiByp8kv8JHgFVrLBT5Z11lFd2JQEl8qw.woff2)
-          format('woff2');
-        unicode-range: U+0900-097F, U+1CD0-1CF6, U+1CF8-1CF9, U+200C-200D,
-          U+20A8, U+20B9, U+25CC, U+A830-A839, U+A8E0-A8FB;
-      }
-      @font-face {
-        font-family: 'Poppins';
-        font-style: normal;
-        font-weight: 900;
-        src: url(https://fonts.gstatic.com/s/poppins/v20/pxiByp8kv8JHgFVrLBT5Z1JlFd2JQEl8qw.woff2)
-          format('woff2');
-        unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB,
-          U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
-      }
-      @font-face {
-        font-family: 'Poppins';
-        font-style: normal;
-        font-weight: 900;
-        src: url(https://fonts.gstatic.com/s/poppins/v20/pxiByp8kv8JHgFVrLBT5Z1xlFd2JQEk.woff2)
-          format('woff2');
-        unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6,
-          U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193,
-          U+2212, U+2215, U+FEFF, U+FFFD;
+    <title>CV - Jean Paul Rojas Véliz | DEDSEC</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Roboto+Mono:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      :root {
+        --primary-color: #00f0ff; /* Azul eléctrico neón */
+        --secondary-color: #bb00ff; /* Púrpura neón */
+        --text-color: #e0e0e0; /* Gris claro para texto */
+        --background-color: #1a1a1a; /* Negro muy oscuro */
+        --card-bg: #282828; /* Gris oscuro para las secciones */
+        --border-color: #3a3a3a; /* Gris oscuro para bordes */
+        --glow-strength: 0 0 10px var(--primary-color),
+          0 0 20px var(--primary-color), 0 0 30px var(--primary-color);
+        --glow-text: 0 0 5px var(--primary-color);
+      }
+
+      body {
+        font-family: 'Roboto Mono', monospace;
+        line-height: 1.6;
+        margin: 0;
+        padding: 0;
+        background-color: var(--background-color);
+        color: var(--text-color);
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        min-height: 100vh;
+        overflow-x: hidden; /* Evita el scroll horizontal por animaciones */
+      }
+
+      .cv-container {
+        width: 100%;
+        max-width: 1200px;
+        background-color: var(--card-bg);
+        box-shadow: var(--glow-strength); /* Sutil brillo al contenedor */
+        margin: 20px;
+        display: flex;
+        flex-direction: column;
+        border: 1px solid var(--primary-color);
+        position: relative;
+        overflow: hidden;
+      }
+
+      /* Efecto de líneas de escaneo */
+      .cv-container::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(
+            rgba(255, 255, 255, 0.05) 1px,
+            transparent 1px
+          )
+          0 0 / 100% 20px;
+        pointer-events: none;
+        animation: scanline 10s linear infinite;
+      }
+
+      @keyframes scanline {
+        0% {
+          background-position: 0 0;
+        }
+        100% {
+          background-position: 0 -200px;
+        }
+      }
+
+      .cv-header {
+        background-color: #0a0a0a;
+        color: #fff;
+        padding: 40px;
+        text-align: center;
+        position: relative;
+        border-bottom: 2px solid var(--primary-color);
+      }
+
+      .cv-header h1 {
+        margin: 0;
+        font-family: 'Orbitron', sans-serif;
+        font-size: 3.5em;
+        text-transform: uppercase;
+        letter-spacing: 3px;
+        color: var(--primary-color);
+        text-shadow: var(--glow-text);
+      }
+
+      .cv-header p {
+        margin: 10px 0 0;
+        font-size: 1.3em;
+        color: var(--secondary-color);
+        text-shadow: var(--glow-text);
+      }
+
+      .cv-body {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 20px;
+      }
+
+      .left-column {
+        flex: 1;
+        min-width: 300px;
+        padding: 20px;
+        border-right: 1px dashed var(--border-color);
+      }
+
+      .right-column {
+        flex: 2;
+        min-width: 600px;
+        padding: 20px;
+      }
+
+      .profile-picture {
+        width: 180px;
+        height: 180px;
+        border-radius: 50%;
+        object-fit: cover;
+        border: 3px solid var(--primary-color);
+        box-shadow: var(--glow-strength);
+        margin: 0 auto 30px;
+        display: block;
+        filter: grayscale(80%) brightness(120%) contrast(1.2); /* Efecto digital */
+        transition: all 0.5s ease-in-out;
+      }
+
+      .profile-picture:hover {
+        filter: grayscale(0%) brightness(100%) contrast(1);
+        transform: scale(1.05);
+        box-shadow: 0 0 15px var(--secondary-color),
+          0 0 25px var(--secondary-color);
+      }
+
+      .section-title {
+        background-color: #333;
+        color: var(--primary-color);
+        padding: 12px 18px;
+        margin-top: 30px;
+        margin-bottom: 20px;
+        border-left: 5px solid var(--secondary-color);
+        font-family: 'Orbitron', sans-serif;
+        font-size: 1.4em;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        text-shadow: var(--glow-text);
+        box-shadow: 0 0 8px rgba(0, 240, 255, 0.3);
+      }
+
+      .contact-info p,
+      .education-item p,
+      .language-item p {
+        margin: 8px 0;
+      }
+
+      .contact-info strong {
+        color: var(--secondary-color);
+      }
+
+      .contact-info a {
+        color: var(--primary-color);
+        text-decoration: none;
+        transition: color 0.3s ease, text-shadow 0.3s ease;
+      }
+
+      .contact-info a:hover {
+        color: var(--secondary-color);
+        text-shadow: var(--glow-text);
+      }
+
+      .experience-item {
+        margin-bottom: 30px;
+        padding-bottom: 20px;
+        border-bottom: 1px dotted var(--border-color);
+      }
+
+      .experience-item:last-child {
+        border-bottom: none;
+      }
+
+      .experience-item h4 {
+        margin: 0 0 8px;
+        font-size: 1.3em;
+        color: var(--primary-color);
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+        text-shadow: var(--glow-text);
+      }
+
+      .experience-item h4 .dates {
+        font-size: 0.9em;
+        color: var(--text-color);
+        white-space: nowrap;
+      }
+
+      .experience-item p {
+        margin: 0 0 10px;
+        color: #b0b0b0;
+      }
+
+      .experience-item strong {
+        color: var(--secondary-color);
+      }
+
+      .experience-item ul {
+        padding-left: 20px;
+        margin: 0;
+        list-style: none; /* Quitamos el estilo por defecto */
+      }
+
+      .experience-item ul li {
+        margin-bottom: 5px;
+        position: relative;
+        padding-left: 20px; /* Espacio para el nuevo bullet */
+      }
+
+      .experience-item ul li::before {
+        content: '//'; /* Bullet personalizado */
+        color: var(--primary-color);
+        position: absolute;
+        left: 0;
+        top: 0;
+        font-weight: bold;
+      }
+
+      .skills-list,
+      .tech-list {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+      }
+
+      .skills-list li,
+      .tech-list li {
+        background-color: #2e2e2e;
+        margin-bottom: 10px;
+        padding: 10px 18px;
+        border-radius: 3px;
+        display: flex;
+        align-items: center;
+        border-left: 3px solid var(--secondary-color);
+        box-shadow: 0 0 5px rgba(187, 0, 255, 0.2);
+        transition: all 0.3s ease;
+      }
+
+      .skills-list li:hover,
+      .tech-list li:hover {
+        border-left-color: var(--primary-color);
+        transform: translateX(5px);
+        box-shadow: 0 0 10px rgba(0, 240, 255, 0.4);
+      }
+
+      .skills-list li::before,
+      .tech-list li::before {
+        content: '>_'; /* Bullet ciberpunk */
+        color: var(--primary-color);
+        font-family: 'Orbitron', sans-serif;
+        font-weight: bold;
+        display: inline-block;
+        width: 2em;
+        margin-left: -2em;
+      }
+
+      .apps-list {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 15px;
+        margin-top: 20px;
+        justify-content: center;
+      }
+
+      .app-icon {
+        width: 60px;
+        height: 60px;
+        background-color: #333;
+        border-radius: 15px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 1.8em;
+        font-family: 'Orbitron', sans-serif;
+        color: var(--primary-color);
+        font-weight: bold;
+        border: 2px solid var(--secondary-color);
+        box-shadow: 0 0 10px rgba(187, 0, 255, 0.3);
+        transition: transform 0.3s ease-in-out,
+          background-color 0.3s ease-in-out, color 0.3s ease-in-out,
+          box-shadow 0.3s ease-in-out;
+        cursor: pointer;
+      }
+
+      .app-icon:hover {
+        transform: scale(1.15) rotate(5deg);
+        background-color: var(--primary-color);
+        color: var(--background-color);
+        box-shadow: var(--glow-strength);
+        border-color: var(--primary-color);
+      }
+
+      .cv-footer {
+        text-align: center;
+        padding: 20px;
+        background-color: #0a0a0a;
+        color: var(--text-color);
+        font-size: 0.9em;
+        border-top: 1px solid var(--primary-color);
+      }
+
+      @media (max-width: 768px) {
+        .cv-body {
+          flex-direction: column;
+        }
+        .left-column {
+          border-right: none;
+          border-bottom: 1px dashed var(--border-color);
+        }
+        .right-column {
+          border-left: none;
+        }
+        .profile-picture {
+          margin-top: 20px;
+        }
+        .cv-header {
+          padding-bottom: 40px;
+        }
+        .apps-list {
+          justify-content: center;
+        }
+        /* Ajustes adicionales para 768px y abajo */
+        .cv-header h1 {
+          font-size: 2.5em; /* Reducir el tamaño del título principal */
+        }
+        .cv-header p {
+          font-size: 1.1em; /* Reducir el tamaño del subtítulo */
+        }
+        .section-title {
+          font-size: 1.2em; /* Reducir el tamaño de los títulos de sección */
+          margin-top: 20px;
+          margin-bottom: 15px;
+        }
+        .app-icon {
+          width: 50px; /* Reducir el tamaño del icono de la aplicación */
+          height: 50px;
+          font-size: 1.5em;
+        }
+        .cv-container {
+          margin: 10px; /* Reducir el margen general del contenedor */
+        }
+        .cv-body {
+          padding: 10px; /* Reducir el padding del cuerpo del CV */
+        }
+        .left-column,
+        .right-column {
+          padding: 15px; /* Reducir el padding de las columnas */
+          min-width: unset; /* Permitir que las columnas se ajusten */
+        }
+      }
+
+      /* Nueva media query para pantallas muy pequeñas (ej. iPhone 14 Pro Max en vertical) */
+      @media (max-width: 480px) {
+        .cv-header {
+          padding: 20px;
+        }
+        .cv-header h1 {
+          font-size: 2em;
+        }
+        .cv-header p {
+          font-size: 1em;
+        }
+        .profile-picture {
+          width: 150px;
+          height: 150px;
+        }
+        .section-title {
+          font-size: 1em;
+          padding: 10px 15px;
+        }
+        .app-icon {
+          width: 40px;
+          height: 40px;
+          font-size: 1.2em;
+          border-radius: 10px;
+        }
+        .skills-list li,
+        .tech-list li {
+          padding: 8px 15px;
+          font-size: 0.9em;
+        }
+        .experience-item h4 {
+          flex-direction: column;
+          align-items: flex-start;
+          font-size: 1.2em;
+        }
+        .experience-item h4 .dates {
+          margin-top: 5px;
+          font-size: 0.8em;
+        }
+      }
+
+      @media (max-width: 768px) {
+        .cv-body {
+          flex-direction: column;
+        }
+        .left-column {
+          border-right: none;
+          border-bottom: 1px dashed var(--border-color);
+        }
+        .right-column {
+          border-left: none;
+        }
+        .profile-picture {
+          margin-top: 20px;
+        }
+        .cv-header {
+          padding-bottom: 40px;
+        }
+        .apps-list {
+          justify-content: center;
+        }
+      }
+
+      /* Animaciones de entrada al hacer scroll (modificadas) */
+      .animate-on-scroll {
+        opacity: 0;
+        transform: translateY(20px) scale(0.98);
+        filter: blur(5px);
+        transition: opacity 0.8s cubic-bezier(0.2, 0.8, 0.2, 1),
+          transform 0.8s cubic-bezier(0.2, 0.8, 0.2, 1),
+          filter 0.8s cubic-bezier(0.2, 0.8, 0.2, 1);
+      }
+
+      .animate-on-scroll.is-visible {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+        filter: blur(0);
+      }
+
+      /* Animación específica para la foto de perfil (efecto de carga digital) */
+      .profile-picture.animate-on-scroll {
+        transform: scale(0.7);
+        filter: brightness(0.5) blur(10px);
+        transition: opacity 1s ease-out, transform 1s ease-out,
+          filter 1s ease-out;
+      }
+
+      .profile-picture.animate-on-scroll.is-visible {
+        transform: scale(1);
+        filter: brightness(1) blur(0) grayscale(80%) brightness(120%)
+          contrast(1.2);
+      }
+
+      /* Animación para los títulos de sección (deslizamiento desde la izquierda con glow) */
+      .section-title.animate-on-scroll {
+        transform: translateX(-50px);
+        box-shadow: none;
+        transition: opacity 0.7s ease-out, transform 0.7s ease-out,
+          box-shadow 0.7s ease-out;
+      }
+
+      .section-title.animate-on-scroll.is-visible {
+        transform: translateX(0);
+        box-shadow: 0 0 8px rgba(0, 240, 255, 0.6);
+      }
+
+      /* Animación de "glitch" para elementos de texto */
+      .glitch {
+        animation: glitch 1.5s infinite alternate;
+      }
+
+      @keyframes glitch {
+        0% {
+          text-shadow: 0.05em 0 0 rgba(0, 240, 255, 0.75),
+            -0.05em -0.025em 0 rgba(187, 0, 255, 0.75),
+            0.025em 0.05em 0 rgba(255, 255, 0, 0.75);
+        }
+        14% {
+          text-shadow: -0.05em -0.025em 0 rgba(0, 240, 255, 0.75),
+            0.025em 0.05em 0 rgba(187, 0, 255, 0.75),
+            -0.05em 0.025em 0 rgba(255, 255, 0, 0.75);
+        }
+        15% {
+          text-shadow: none;
+        }
+        16% {
+          text-shadow: 0.05em 0 0 rgba(0, 240, 255, 0.75),
+            -0.05em -0.025em 0 rgba(187, 0, 255, 0.75),
+            0.025em 0.05em 0 rgba(255, 255, 0, 0.75);
+        }
+        17% {
+          text-shadow: none;
+        }
+        20% {
+          text-shadow: 0.05em 0 0 rgba(0, 240, 255, 0.75),
+            -0.05em -0.025em 0 rgba(187, 0, 255, 0.75),
+            0.025em 0.05em 0 rgba(255, 255, 0, 0.75);
+        }
+        21% {
+          text-shadow: none;
+        }
+        22% {
+          text-shadow: 0.05em 0 0 rgba(0, 240, 255, 0.75),
+            -0.05em -0.025em 0 rgba(187, 0, 255, 0.75),
+            0.025em 0.05em 0 rgba(255, 255, 0, 0.75);
+        }
+        23% {
+          text-shadow: none;
+        }
+        25% {
+          text-shadow: 0.05em 0 0 rgba(0, 240, 255, 0.75),
+            -0.05em -0.025em 0 rgba(187, 0, 255, 0.75),
+            0.025em 0.05em 0 rgba(255, 255, 0, 0.75);
+        }
+        28% {
+          text-shadow: none;
+        }
+        30% {
+          text-shadow: 0.05em 0 0 rgba(0, 240, 255, 0.75),
+            -0.05em -0.025em 0 rgba(187, 0, 255, 0.75),
+            0.025em 0.05em 0 rgba(255, 255, 0, 0.75);
+        }
+        33% {
+          text-shadow: none;
+        }
+        35% {
+          text-shadow: 0.05em 0 0 rgba(0, 240, 255, 0.75),
+            -0.05em -0.025em 0 rgba(187, 0, 255, 0.75),
+            0.025em 0.05em 0 rgba(255, 255, 0, 0.75);
+        }
+        40% {
+          text-shadow: none;
+        }
+        45% {
+          text-shadow: 0.05em 0 0 rgba(0, 240, 255, 0.75),
+            -0.05em -0.025em 0 rgba(187, 0, 255, 0.75),
+            0.025em 0.05em 0 rgba(255, 255, 0, 0.75);
+        }
+        50% {
+          text-shadow: none;
+        }
+        55% {
+          text-shadow: 0.05em 0 0 rgba(0, 240, 255, 0.75),
+            -0.05em -0.025em 0 rgba(187, 0, 255, 0.75),
+            0.025em 0.05em 0 rgba(255, 255, 0, 0.75);
+        }
+        60% {
+          text-shadow: none;
+        }
+        70% {
+          text-shadow: 0.05em 0 0 rgba(0, 240, 255, 0.75),
+            -0.05em -0.025em 0 rgba(187, 0, 255, 0.75),
+            0.025em 0.05em 0 rgba(255, 255, 0, 0.75);
+        }
+        71% {
+          text-shadow: none;
+        }
+        72% {
+          text-shadow: 0.05em 0 0 rgba(0, 240, 255, 0.75),
+            -0.05em -0.025em 0 rgba(187, 0, 255, 0.75),
+            0.025em 0.05em 0 rgba(255, 255, 0, 0.75);
+        }
+        73% {
+          text-shadow: none;
+        }
+        75% {
+          text-shadow: 0.05em 0 0 rgba(0, 240, 255, 0.75),
+            -0.05em -0.025em 0 rgba(187, 0, 255, 0.75),
+            0.025em 0.05em 0 rgba(255, 255, 0, 0.75);
+        }
+        76% {
+          text-shadow: none;
+        }
+        77% {
+          text-shadow: 0.05em 0 0 rgba(0, 240, 255, 0.75),
+            -0.05em -0.025em 0 rgba(187, 0, 255, 0.75),
+            0.025em 0.05em 0 rgba(255, 255, 0, 0.75);
+        }
+        78% {
+          text-shadow: none;
+        }
+        79% {
+          text-shadow: 0.05em 0 0 rgba(0, 240, 255, 0.75),
+            -0.05em -0.025em 0 rgba(187, 0, 255, 0.75),
+            0.025em 0.05em 0 rgba(255, 255, 0, 0.75);
+        }
+        80% {
+          text-shadow: none;
+        }
+        85% {
+          text-shadow: 0.05em 0 0 rgba(0, 240, 255, 0.75),
+            -0.05em -0.025em 0 rgba(187, 0, 255, 0.75),
+            0.025em 0.05em 0 rgba(255, 255, 0, 0.75);
+        }
+        90% {
+          text-shadow: none;
+        }
+        95% {
+          text-shadow: 0.05em 0 0 rgba(0, 240, 255, 0.75),
+            -0.05em -0.025em 0 rgba(187, 0, 255, 0.75),
+            0.025em 0.05em 0 rgba(255, 255, 0, 0.75);
+        }
+        100% {
+          text-shadow: none;
+        }
       }
     </style>
-    <script type="module" crossorigin src="/assets/index-f9821746.js"></script>
-    <link rel="stylesheet" href="/assets/index-44bddeb0.css">
   </head>
   <body>
-    <div id="root"></div>
-    
+    <div class="cv-container">
+      <div class="cv-header animate-on-scroll">
+        <h1>Jean Paul Rojas Véliz</h1>
+        <p>Ingeniero de Sistemas <span class="glitch">[DEDSEC_AGENTE]</span></p>
+      </div>
+
+      <div class="cv-body">
+        <div class="left-column">
+          <img
+            src="https://via.placeholder.com/180/00f0ff/1a1a1a?text=JPR"
+            alt="Foto de Perfil"
+            class="profile-picture animate-on-scroll"
+          />
+          <div class="section-title animate-on-scroll">
+            // Datos de Agente <span class="glitch">.log</span>
+          </div>
+          <div class="contact-info animate-on-scroll">
+            <p><strong>Dirección:</strong> Curitiba - PR - Brasil</p>
+            <p><strong>Teléfono:</strong> +55 (41) 98762-3549</p>
+            <p><strong>Email:</strong> ingjeanpaulrojas@gmail.com</p>
+            <p>
+              <strong>LinkedIn:</strong>
+              <a
+                href="https://www.linkedin.com/in/jeanpaul-rojasv/"
+                target="_blank"
+                >linkedin.com/in/jeanpaul-rojasv</a
+              >
+            </p>
+            <p>
+              <strong>Github:</strong>
+              <a href="https://github.com/eccianime" target="_blank"
+                >github.com/eccianime</a
+              >
+            </p>
+          </div>
+
+          <div class="section-title animate-on-scroll">
+            // Archivos de Formación
+          </div>
+          <div class="education-item animate-on-scroll">
+            <h4>Ingeniero de Sistemas</h4>
+            <p>Universidad de Oriente</p>
+            <p>Venezuela - Diciembre 2017</p>
+          </div>
+
+          <div class="section-title animate-on-scroll">
+            // Módulos de Idioma
+          </div>
+          <div class="language-item animate-on-scroll">
+            <p>Español - Nativo</p>
+            <p>Portugués - Fluido</p>
+            <p>Inglés - Fluido</p>
+          </div>
+
+          <div class="section-title animate-on-scroll">
+            // Habilidades Programables
+          </div>
+          <ul class="tech-list">
+            <li class="animate-on-scroll">Styled Components (4 años)</li>
+            <li class="animate-on-scroll">Native Base / NativeWind (4 años)</li>
+            <li class="animate-on-scroll">Firebase (4 años)</li>
+            <li class="animate-on-scroll">NPM / NVM / Yarn (4 años)</li>
+            <li class="animate-on-scroll">Postman / Insomnia (4 años)</li>
+            <li class="animate-on-scroll">Bitbucket / Confluence (4 años)</li>
+            <li class="animate-on-scroll">Storybook Components</li>
+          </ul>
+
+          <div class="section-title animate-on-scroll">
+            // Despliegues de Aplicación
+          </div>
+          <div class="apps-list animate-on-scroll">
+            <div class="app-icon" title="MUV App">MUV</div>
+            <div class="app-icon" title="VIDA App">VIDA</div>
+            <div class="app-icon" title="MVI App">MVI</div>
+            <div class="app-icon" title="459 App">459</div>
+            <div class="app-icon" title="JUGA App">JUGA</div>
+            <div class="app-icon" title="Infinity App">∞</div>
+            <!-- Agrega más iconos según sea necesario -->
+          </div>
+        </div>
+
+        <div class="right-column">
+          <div class="section-title animate-on-scroll">
+            // Historial de Operaciones
+          </div>
+          <div class="experience-item animate-on-scroll">
+            <h4>
+              Vector Casa de Bolsa
+              <span class="dates">[Octubre 2023 – Agosto 2025]</span>
+            </h4>
+            <p>
+              Desarrollo de aplicación financiera con el objetivo de promover
+              inversiones en el mercado mexicano. Incluye asistencia vía
+              Inteligencia Artificial, desarrollada internamente, interacción
+              con agentes humanos, entrada con biometría y técnicas de
+              ofuscación de código para mantener altas medidas de seguridad.
+            </p>
+            <p>
+              <strong>Tecnologías:</strong> React Native CLI, Redux Toolkit,
+              Apollo GraphQL Client, AWS, Biometrics, Sentry, Figma, Lottie,
+              LaunchDarkly, Apple AppStore Connect y PlayStore Dev Account
+              (Publicación en tiendas), Scrum + Kanban, Jira + Git + Github.
+            </p>
+          </div>
+          <div class="experience-item animate-on-scroll">
+            <h4>
+              XGROW Tecnología
+              <span class="dates">[Octubre de 2022 – Octubre 2023]</span>
+            </h4>
+            <p>
+              Desarrollo de aplicaciones educativas (Android y iOS) para ver
+              videos de educación financiera como parte de las campañas de
+              educación de Pablo Marçal "El peor año de tu vida", "Million
+              Clube", "Clube459" y "Movimiento Virando Inversidor".
+            </p>
+            <p>
+              Desarrollo de aplicación de transporte de pasajeros, y
+              envío/recepción de paquetes para clientes de delivery con servicio
+              de chat y geolocalización en tiempo real usando los servicios de
+              aplicación de Firebase.
+            </p>
+            <p>
+              <strong>Tecnologías:</strong> React Native, Expo-EAS, Firebase,
+              CSS + Styled Components, Figma, Axios, Redux Toolkit, Scrum +
+              Kanban, Jira + Git + Github, Apple AppStore Connect y PlayStore
+              Dev Account (Publicación en tiendas)
+            </p>
+          </div>
+          <div class="experience-item animate-on-scroll">
+            <h4>
+              Envixo Sistemas LTDA
+              <span class="dates">[Agosto de 2020 – Septiembre de 2022]</span>
+            </h4>
+            <p>
+              Desarrollo de una aplicación de comercio electrónico (Android e
+              iOS) relacionada con la venta de hamburguesas de pollo y carne
+              para clientes de Angola.
+            </p>
+            <p>
+              Desarrollo de una aplicación de lavandería (Android e iOS) tipo
+              comercio electrónico para recoger y entregar ropa a clientes de
+              Portugal.
+            </p>
+            <p>
+              Desarrollo de una aplicación multilingüe (inglés / alemán)
+              (Android e iOS) para controlar de forma remota una cuna durante un
+              tiempo predefinido y con luces de colores que sirve para relajar
+              al niño.
+            </p>
+            <p>
+              <strong>Tecnologías:</strong> React Native + JavaScript +
+              TypeScript, Expo Dev Client + EAS, Jest + RN Testing library
+              (tests), Redux + Redux Toolkit, Figma (UI-UX), Axios + ReactQuery
+              (RESTFUL API), Scrum + Kanban, Jira + Github, Apple AppStore
+              Connect y PlayStore Dev Account (Publicación en tiendas)
+            </p>
+          </div>
+          <div class="experience-item animate-on-scroll">
+            <h4>
+              MG Network Marketing Digital LTDA
+              <span class="dates">[Mayo de 2019 – Julio de 2020]</span>
+            </h4>
+            <p>
+              Creación y mantenimiento de un sitio web para la venta de boletos
+              de autobuses en Brasil, América, España, Portugal y el Reino Unido
+              en Europa.
+            </p>
+            <p>
+              Desarrollo de aplicación para el registro de clientes y granjas,
+              así como órdenes de compra de semillas en lugares sin conexión a
+              internet, donde todos los datos se precargan, los pedidos se crean
+              sin conexión y luego se sincronizan con la base de datos cuando el
+              dispositivo vuelve a tener señal celular.
+            </p>
+          </div>
+          <div class="experience-item animate-on-scroll">
+            <h4>
+              Trentim Gestão e Tecnologia, LTD
+              <span class="dates">[Enero de 2018 – Abril de 2019]</span>
+            </h4>
+            <p>
+              Inicio de un proyecto a estilo Fintech / Kickstarter para integrar
+              lentes inteligentes y listas de regalos, donde los usuarios hacían
+              contribuciones a cada lista. Las tiendas se buscaban por distancia
+              (GPS), se notificaba a los usuarios cuando su lista recibía una
+              contribución y se formalizaba la contribución con carros de
+              compras.
+            </p>
+            <p>
+              Desarrollo de una aplicación web para la venta de cursos en línea
+              en el campo del fitness. A través de esta aplicación, los
+              clientes, después de registrarse, podían suscribirse a videos de
+              instructores que mostraban diferentes técnicas de ejercicio y
+              rutinas para perder peso.
+            </p>
+            <p>
+              <strong>Tecnologías:</strong> React Native + Expo, Amazon Web
+              Services (AWS S3), ReactJS, Figma, Axios (RESTFUL API),
+              ContextAPI, Google Cloud Platform, Node + Express + Sequelize,
+              GPS, CelCoin Pagamentos, Scrum + Kanban + Trello, Git + Github
+              (Control de versiones)
+            </p>
+          </div>
+          <div class="experience-item animate-on-scroll">
+            <h4>
+              SAISA
+              <span class="dates">[Marzo de 2018 – Diciembre de 2018]</span>
+            </h4>
+            <p>
+              Creación de una aplicación en Android (EBE Tracking) para el
+              control de entrada a edificios a través de registros digitales de
+              entrada y salida de personal, vehículos, mercancías, etc.
+            </p>
+            <p>
+              <strong>Tecnologías:</strong> Javascript, HTML5 + CSS3, PHP + PDO,
+              Adobe Illustrator, jQuery Mobile, Cordova, MySQL, Adobe Photoshop
+            </p>
+          </div>
+          <div class="experience-item animate-on-scroll">
+            <h4>
+              Empresa MIXTA PETROPIAR, S.A. (Venezuela)
+              <span class="dates">[Marzo de 2017 – Noviembre de 2017]</span>
+            </h4>
+            <p>
+              Desarrollo de una aplicación web para el control y monitoreo de
+              procesos de contratación desde que son generados por los gerentes
+              solicitantes hasta su firma entre la empresa mixta PETROPIAR, S.A.
+              y los contratistas.
+            </p>
+            <p>
+              <strong>Tecnologías:</strong> Javascript, HTML5 + CSS3, ExtJS, PHP
+              + PDO, MySQL, SVN
+            </p>
+          </div>
+
+          <div class="section-title animate-on-scroll">
+            // Protocolos y Habilidades
+          </div>
+          <ul class="skills-list">
+            <li class="animate-on-scroll">
+              Conocimiento en la creación de aplicaciones para iOS y Android,
+              desde el inicio hasta la publicación en la AppStore y PlayStore,
+              utilizando React Native CLI y EAS.
+            </li>
+            <li class="animate-on-scroll">
+              Aplicación de las mejores prácticas de programación a través de
+              los principios SOLID y reglas para crear código limpio y escalable
+              usando principios de desarrollo KISS, DRY e YAGNI.
+            </li>
+            <li class="animate-on-scroll">
+              Diseño de bases de datos relacionales y no relacionales, desde
+              herramientas de diseño hasta diseños conceptuales utilizando
+              herramientas de UML como casos de uso, diagramas de estados,
+              diagramas de flujo, etc.
+            </li>
+            <li class="animate-on-scroll">
+              Conocimiento del paradigma de la Orientación a Objetos y patrones
+              de diseño MVC/MVVM.
+            </li>
+            <li class="animate-on-scroll">
+              Disposición para enfrentar nuevos desafíos de manera dinámica y
+              tomar la iniciativa.
+            </li>
+            <li class="animate-on-scroll">
+              Adaptación rápida a cualquier entorno de trabajo de manera
+              eficiente y organizada.
+            </li>
+            <li class="animate-on-scroll">
+              Facilidad para trabajar en equipo y mantener buenas relaciones
+              interpersonales.
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="cv-footer animate-on-scroll">
+        <p>
+          // Ejecución Exitosa: Hecho con
+          <span style="color: red">&hearts;</span> por Jean Paul Rojas Véliz
+        </p>
+      </div>
+
+      <script>
+        document.addEventListener('DOMContentLoaded', function () {
+          const animateElements =
+            document.querySelectorAll('.animate-on-scroll');
+
+          const observerOptions = {
+            root: null, // viewport
+            rootMargin: '0px',
+            threshold: 0.1, // 10% del elemento visible para activar
+          };
+
+          const observer = new IntersectionObserver((entries, observer) => {
+            entries.forEach((entry) => {
+              if (entry.isIntersecting) {
+                entry.target.classList.add('is-visible');
+                // Si solo quieres que la animación se ejecute una vez
+                observer.unobserve(entry.target);
+              }
+            });
+          }, observerOptions);
+
+          animateElements.forEach((element) => {
+            observer.observe(element);
+          });
+        });
+      </script>
+    </div>
   </body>
 </html>
