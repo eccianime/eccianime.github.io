@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>CV - Jean Paul Rojas Véliz | DEDSEC</title>
+    <title id="cv-page-title">CV - Jean Paul Rojas Véliz</title>
     <link
       href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Roboto+Mono:wght@300;400;700&display=swap"
       rel="stylesheet"
@@ -128,12 +128,11 @@
         box-shadow: var(--glow-strength);
         margin: 0 auto 30px;
         display: block;
-        filter: grayscale(80%) brightness(120%) contrast(1.2); /* Efecto digital */
+
         transition: all 0.5s ease-in-out;
       }
 
       .profile-picture:hover {
-        filter: grayscale(0%) brightness(100%) contrast(1);
         transform: scale(1.05);
         box-shadow: 0 0 15px var(--secondary-color),
           0 0 25px var(--secondary-color);
@@ -453,8 +452,7 @@
 
       .profile-picture.animate-on-scroll.is-visible {
         transform: scale(1);
-        filter: brightness(1) blur(0) grayscale(80%) brightness(120%)
-          contrast(1.2);
+        filter: blur(0);
       }
 
       /* Animación para los títulos de sección (deslizamiento desde la izquierda con glow) */
@@ -610,67 +608,165 @@
           text-shadow: none;
         }
       }
+
+      /* Estilos para los botones de idioma */
+      .language-switcher {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        z-index: 1000; /* Para asegurar que estén por encima de otros elementos */
+      }
+
+      .language-switcher button {
+        background: var(--card-bg);
+        border: 1px solid var(--primary-color);
+        border-radius: 50%;
+        width: 50px;
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        box-shadow: var(--glow-strength);
+        transition: all 0.3s ease;
+        padding: 0; /* Eliminar padding por defecto del botón */
+      }
+
+      .language-switcher button:hover {
+        transform: scale(1.1);
+        box-shadow: 0 0 15px var(--secondary-color),
+          0 0 25px var(--secondary-color);
+        border-color: var(--secondary-color);
+      }
+
+      .language-switcher button img {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%; /* Hacer las banderas circulares */
+        object-fit: cover;
+      }
+
+      /* Media queries para los botones de idioma */
+      @media (max-width: 768px) {
+        .language-switcher {
+          bottom: 10px;
+          right: 10px;
+          gap: 8px;
+        }
+        .language-switcher button {
+          width: 40px;
+          height: 40px;
+        }
+        .language-switcher button img {
+          width: 30px;
+          height: 30px;
+        }
+      }
+
+      @media (max-width: 480px) {
+        .language-switcher {
+          flex-direction: row; /* En pantallas pequeñas, ponerlos en fila */
+          bottom: 10px;
+          right: 50%;
+          transform: translateX(50%);
+          gap: 5px;
+        }
+        .language-switcher button {
+          width: 35px;
+          height: 35px;
+        }
+        .language-switcher button img {
+          width: 28px;
+          height: 28px;
+        }
+      }
     </style>
   </head>
   <body>
     <div class="cv-container">
       <div class="cv-header animate-on-scroll">
-        <h1>Jean Paul Rojas Véliz</h1>
-        <p>Ingeniero de Sistemas <span class="glitch">[DEDSEC_AGENTE]</span></p>
+        <h1 id="cv-name">Jean Paul Rojas Véliz</h1>
+        <p>
+          <span class="glitch" id="cv-job-title">INGENIERO DE SISTEMAS</span>
+        </p>
       </div>
 
       <div class="cv-body">
         <div class="left-column">
           <img
-            src="https://via.placeholder.com/180/00f0ff/1a1a1a?text=JPR"
+            src="assets/profile.jpeg"
             alt="Foto de Perfil"
             class="profile-picture animate-on-scroll"
+            id="cv-profile-picture"
           />
-          <div class="section-title animate-on-scroll">
-            // Datos de Agente <span class="glitch">.log</span>
+          <div class="section-title animate-on-scroll" id="personal-info-title">
+            // INFORMACIÓN PERSONAL
           </div>
           <div class="contact-info animate-on-scroll">
-            <p><strong>Dirección:</strong> Curitiba - PR - Brasil</p>
-            <p><strong>Teléfono:</strong> +55 (41) 98762-3549</p>
-            <p><strong>Email:</strong> ingjeanpaulrojas@gmail.com</p>
             <p>
-              <strong>LinkedIn:</strong>
+              <strong id="personal-info-address-label">Dirección:</strong>
+              <span id="personal-info-address-value"
+                >Curitiba - PR - Brasil</span
+              >
+            </p>
+            <p>
+              <strong id="personal-info-phone-label">Teléfono:</strong>
+              <span id="personal-info-phone-value">+55 (41) 98762-3549</span>
+            </p>
+            <p>
+              <strong id="personal-info-email-label">Email:</strong>
+              <span id="personal-info-email-value"
+                >ingjeanpaulrojas@gmail.com</span
+              >
+            </p>
+            <p>
+              <strong id="personal-info-linkedin-label">LinkedIn:</strong>
               <a
                 href="https://www.linkedin.com/in/jeanpaul-rojasv/"
                 target="_blank"
+                id="personal-info-linkedin-value"
                 >linkedin.com/in/jeanpaul-rojasv</a
               >
             </p>
             <p>
-              <strong>Github:</strong>
-              <a href="https://github.com/eccianime" target="_blank"
+              <strong id="personal-info-github-label">Github:</strong>
+              <a
+                href="https://github.com/eccianime"
+                target="_blank"
+                id="personal-info-github-value"
                 >github.com/eccianime</a
               >
             </p>
           </div>
 
-          <div class="section-title animate-on-scroll">
-            // Archivos de Formación
+          <div class="section-title animate-on-scroll" id="education-title">
+            // FORMACIÓN
           </div>
           <div class="education-item animate-on-scroll">
-            <h4>Ingeniero de Sistemas</h4>
-            <p>Universidad de Oriente</p>
-            <p>Venezuela - Diciembre 2017</p>
+            <h4 id="education-degree">Ingeniero de Sistemas</h4>
+            <p id="education-university">Universidad de Oriente</p>
+            <p id="education-date">Venezuela - Diciembre 2017</p>
           </div>
 
-          <div class="section-title animate-on-scroll">
-            // Módulos de Idioma
+          <div class="section-title animate-on-scroll" id="languages-title">
+            // IDIOMAS
           </div>
           <div class="language-item animate-on-scroll">
-            <p>Español - Nativo</p>
-            <p>Portugués - Fluido</p>
-            <p>Inglés - Fluido</p>
+            <p id="language-spanish">Español - Nativo</p>
+            <p id="language-portuguese">Portugués - Fluido</p>
+            <p id="language-english">Inglés - Fluido</p>
           </div>
 
-          <div class="section-title animate-on-scroll">
-            // Habilidades Programables
+          <div
+            class="section-title animate-on-scroll"
+            id="technical-skills-title"
+          >
+            // HABILIDADES TECNICAS
           </div>
-          <ul class="tech-list">
+          <ul class="tech-list" id="technical-skills-list">
             <li class="animate-on-scroll">Styled Components (4 años)</li>
             <li class="animate-on-scroll">Native Base / NativeWind (4 años)</li>
             <li class="animate-on-scroll">Firebase (4 años)</li>
@@ -680,7 +776,7 @@
             <li class="animate-on-scroll">Storybook Components</li>
           </ul>
 
-          <div class="section-title animate-on-scroll">
+          <!-- <div class="section-title animate-on-scroll">
             // Despliegues de Aplicación
           </div>
           <div class="apps-list animate-on-scroll">
@@ -690,168 +786,191 @@
             <div class="app-icon" title="459 App">459</div>
             <div class="app-icon" title="JUGA App">JUGA</div>
             <div class="app-icon" title="Infinity App">∞</div>
-            <!-- Agrega más iconos según sea necesario -->
-          </div>
+            
+          </div> -->
         </div>
 
         <div class="right-column">
-          <div class="section-title animate-on-scroll">
-            // Historial de Operaciones
+          <div
+            class="section-title animate-on-scroll"
+            id="work-experience-title"
+          >
+            // EXPERIENCIA LABORAL
           </div>
-          <div class="experience-item animate-on-scroll">
-            <h4>
-              Vector Casa de Bolsa
-              <span class="dates">[Octubre 2023 – Agosto 2025]</span>
-            </h4>
-            <p>
-              Desarrollo de aplicación financiera con el objetivo de promover
-              inversiones en el mercado mexicano. Incluye asistencia vía
-              Inteligencia Artificial, desarrollada internamente, interacción
-              con agentes humanos, entrada con biometría y técnicas de
-              ofuscación de código para mantener altas medidas de seguridad.
-            </p>
-            <p>
-              <strong>Tecnologías:</strong> React Native CLI, Redux Toolkit,
-              Apollo GraphQL Client, AWS, Biometrics, Sentry, Figma, Lottie,
-              LaunchDarkly, Apple AppStore Connect y PlayStore Dev Account
-              (Publicación en tiendas), Scrum + Kanban, Jira + Git + Github.
-            </p>
-          </div>
-          <div class="experience-item animate-on-scroll">
-            <h4>
-              XGROW Tecnología
-              <span class="dates">[Octubre de 2022 – Octubre 2023]</span>
-            </h4>
-            <p>
-              Desarrollo de aplicaciones educativas (Android y iOS) para ver
-              videos de educación financiera como parte de las campañas de
-              educación de Pablo Marçal "El peor año de tu vida", "Million
-              Clube", "Clube459" y "Movimiento Virando Inversidor".
-            </p>
-            <p>
-              Desarrollo de aplicación de transporte de pasajeros, y
-              envío/recepción de paquetes para clientes de delivery con servicio
-              de chat y geolocalización en tiempo real usando los servicios de
-              aplicación de Firebase.
-            </p>
-            <p>
-              <strong>Tecnologías:</strong> React Native, Expo-EAS, Firebase,
-              CSS + Styled Components, Figma, Axios, Redux Toolkit, Scrum +
-              Kanban, Jira + Git + Github, Apple AppStore Connect y PlayStore
-              Dev Account (Publicación en tiendas)
-            </p>
-          </div>
-          <div class="experience-item animate-on-scroll">
-            <h4>
-              Envixo Sistemas LTDA
-              <span class="dates">[Agosto de 2020 – Septiembre de 2022]</span>
-            </h4>
-            <p>
-              Desarrollo de una aplicación de comercio electrónico (Android e
-              iOS) relacionada con la venta de hamburguesas de pollo y carne
-              para clientes de Angola.
-            </p>
-            <p>
-              Desarrollo de una aplicación de lavandería (Android e iOS) tipo
-              comercio electrónico para recoger y entregar ropa a clientes de
-              Portugal.
-            </p>
-            <p>
-              Desarrollo de una aplicación multilingüe (inglés / alemán)
-              (Android e iOS) para controlar de forma remota una cuna durante un
-              tiempo predefinido y con luces de colores que sirve para relajar
-              al niño.
-            </p>
-            <p>
-              <strong>Tecnologías:</strong> React Native + JavaScript +
-              TypeScript, Expo Dev Client + EAS, Jest + RN Testing library
-              (tests), Redux + Redux Toolkit, Figma (UI-UX), Axios + ReactQuery
-              (RESTFUL API), Scrum + Kanban, Jira + Github, Apple AppStore
-              Connect y PlayStore Dev Account (Publicación en tiendas)
-            </p>
-          </div>
-          <div class="experience-item animate-on-scroll">
-            <h4>
-              MG Network Marketing Digital LTDA
-              <span class="dates">[Mayo de 2019 – Julio de 2020]</span>
-            </h4>
-            <p>
-              Creación y mantenimiento de un sitio web para la venta de boletos
-              de autobuses en Brasil, América, España, Portugal y el Reino Unido
-              en Europa.
-            </p>
-            <p>
-              Desarrollo de aplicación para el registro de clientes y granjas,
-              así como órdenes de compra de semillas en lugares sin conexión a
-              internet, donde todos los datos se precargan, los pedidos se crean
-              sin conexión y luego se sincronizan con la base de datos cuando el
-              dispositivo vuelve a tener señal celular.
-            </p>
-          </div>
-          <div class="experience-item animate-on-scroll">
-            <h4>
-              Trentim Gestão e Tecnologia, LTD
-              <span class="dates">[Enero de 2018 – Abril de 2019]</span>
-            </h4>
-            <p>
-              Inicio de un proyecto a estilo Fintech / Kickstarter para integrar
-              lentes inteligentes y listas de regalos, donde los usuarios hacían
-              contribuciones a cada lista. Las tiendas se buscaban por distancia
-              (GPS), se notificaba a los usuarios cuando su lista recibía una
-              contribución y se formalizaba la contribución con carros de
-              compras.
-            </p>
-            <p>
-              Desarrollo de una aplicación web para la venta de cursos en línea
-              en el campo del fitness. A través de esta aplicación, los
-              clientes, después de registrarse, podían suscribirse a videos de
-              instructores que mostraban diferentes técnicas de ejercicio y
-              rutinas para perder peso.
-            </p>
-            <p>
-              <strong>Tecnologías:</strong> React Native + Expo, Amazon Web
-              Services (AWS S3), ReactJS, Figma, Axios (RESTFUL API),
-              ContextAPI, Google Cloud Platform, Node + Express + Sequelize,
-              GPS, CelCoin Pagamentos, Scrum + Kanban + Trello, Git + Github
-              (Control de versiones)
-            </p>
-          </div>
-          <div class="experience-item animate-on-scroll">
-            <h4>
-              SAISA
-              <span class="dates">[Marzo de 2018 – Diciembre de 2018]</span>
-            </h4>
-            <p>
-              Creación de una aplicación en Android (EBE Tracking) para el
-              control de entrada a edificios a través de registros digitales de
-              entrada y salida de personal, vehículos, mercancías, etc.
-            </p>
-            <p>
-              <strong>Tecnologías:</strong> Javascript, HTML5 + CSS3, PHP + PDO,
-              Adobe Illustrator, jQuery Mobile, Cordova, MySQL, Adobe Photoshop
-            </p>
-          </div>
-          <div class="experience-item animate-on-scroll">
-            <h4>
-              Empresa MIXTA PETROPIAR, S.A. (Venezuela)
-              <span class="dates">[Marzo de 2017 – Noviembre de 2017]</span>
-            </h4>
-            <p>
-              Desarrollo de una aplicación web para el control y monitoreo de
-              procesos de contratación desde que son generados por los gerentes
-              solicitantes hasta su firma entre la empresa mixta PETROPIAR, S.A.
-              y los contratistas.
-            </p>
-            <p>
-              <strong>Tecnologías:</strong> Javascript, HTML5 + CSS3, ExtJS, PHP
-              + PDO, MySQL, SVN
-            </p>
+          <!-- Nuevo contenedor para las experiencias laborales -->
+          <div id="work-experience-list-container">
+            <div
+              class="experience-item animate-on-scroll"
+              id="we-vector-casa-de-bolsa"
+            >
+              <h4>
+                Vector Casa de Bolsa
+                <span class="dates">[Octubre 2023 – Agosto 2025]</span>
+              </h4>
+              <p>
+                Desarrollo de aplicación financiera con el objetivo de promover
+                inversiones en el mercado mexicano. Incluye asistencia vía
+                Inteligencia Artificial, desarrollada internamente, interacción
+                con agentes humanos, entrada con biometría y técnicas de
+                ofuscación de código para mantener altas medidas de seguridad.
+              </p>
+              <p>
+                <strong>Tecnologías:</strong> React Native CLI, Redux Toolkit,
+                Apollo GraphQL Client, AWS, Biometrics, Sentry, Figma, Lottie,
+                LaunchDarkly, Apple AppStore Connect y PlayStore Dev Account
+                (Publicación en tiendas), Scrum + Kanban, Jira + Git + Github.
+              </p>
+            </div>
+            <div
+              class="experience-item animate-on-scroll"
+              id="we-xgrow-tecnologia"
+            >
+              <h4>
+                XGROW Tecnología
+                <span class="dates">[Octubre de 2022 – Octubre 2023]</span>
+              </h4>
+              <p>
+                Desarrollo de aplicaciones educativas (Android y iOS) para ver
+                videos de educación financiera como parte de las campañas de
+                educación de Pablo Marçal "El peor año de tu vida", "Million
+                Clube", "Clube459" y "Movimiento Virando Inversidor".
+              </p>
+              <p>
+                Desarrollo de aplicación de transporte de pasajeros, y
+                envío/recepción de paquetes para clientes de delivery con
+                servicio de chat y geolocalización en tiempo real usando los
+                servicios de aplicación de Firebase.
+              </p>
+              <p>
+                <strong>Tecnologías:</strong> React Native, Expo-EAS, Firebase,
+                CSS + Styled Components, Figma, Axios, Redux Toolkit, Scrum +
+                Kanban, Jira + Git + Github, Apple AppStore Connect y PlayStore
+                Dev Account (Publicación en tiendas)
+              </p>
+            </div>
+            <div
+              class="experience-item animate-on-scroll"
+              id="we-envixo-sistemas"
+            >
+              <h4>
+                Envixo Sistemas LTDA
+                <span class="dates">[Agosto de 2020 – Septiembre de 2022]</span>
+              </h4>
+              <p>
+                Desarrollo de una aplicación de comercio electrónico (Android e
+                iOS) relacionada con la venta de hamburguesas de pollo y carne
+                para clientes de Angola.
+              </p>
+              <p>
+                Desarrollo de una aplicación de lavandería (Android e iOS) tipo
+                comercio electrónico para recoger y entregar ropa a clientes de
+                Portugal.
+              </p>
+              <p>
+                Desarrollo de una aplicación multilingüe (inglés / alemán)
+                (Android e iOS) para controlar de forma remota una cuna durante
+                un tiempo predefinido y con luces de colores que sirve para
+                relajar al niño.
+              </p>
+              <p>
+                <strong>Tecnologías:</strong> React Native + JavaScript +
+                TypeScript, Expo Dev Client + EAS, Jest + RN Testing library
+                (tests), Redux + Redux Toolkit, Figma (UI-UX), Axios +
+                ReactQuery (RESTFUL API), Scrum + Kanban, Jira + Github, Apple
+                AppStore Connect y PlayStore Dev Account (Publicación en
+                tiendas)
+              </p>
+            </div>
+            <div class="experience-item animate-on-scroll" id="we-mg-network">
+              <h4>
+                MG Network Marketing Digital LTDA
+                <span class="dates">[Mayo de 2019 – Julio de 2020]</span>
+              </h4>
+              <p>
+                Creación y mantenimiento de un sitio web para la venta de
+                boletos de autobuses en Brasil, América, España, Portugal y el
+                Reino Unido en Europa.
+              </p>
+              <p>
+                Desarrollo de aplicación para el registro de clientes y granjas,
+                así como órdenes de compra de semillas en lugares sin conexión a
+                internet, donde todos los datos se precargan, los pedidos se
+                crean sin conexión y luego se sincronizan con la base de datos
+                cuando el dispositivo vuelve a tener señal celular.
+              </p>
+            </div>
+            <div
+              class="experience-item animate-on-scroll"
+              id="we-trentim-gestao"
+            >
+              <h4>
+                Trentim Gestão e Tecnologia, LTD
+                <span class="dates">[Enero de 2018 – Abril de 2019]</span>
+              </h4>
+              <p>
+                Inicio de un proyecto a estilo Fintech / Kickstarter para
+                integrar lentes inteligentes y listas de regalos, donde los
+                usuarios hacían contribuciones a cada lista. Las tiendas se
+                buscaban por distancia (GPS), se notificaba a los usuarios
+                cuando su lista recibía una contribución y se formalizaba la
+                contribución con carros de compras.
+              </p>
+              <p>
+                Desarrollo de una aplicación web para la venta de cursos en
+                línea en el campo del fitness. A través de esta aplicación, los
+                clientes, después de registrarse, podían suscribirse a videos de
+                instructores que mostraban diferentes técnicas de ejercicio y
+                rutinas para perder peso.
+              </p>
+              <p>
+                <strong>Tecnologías:</strong> React Native + Expo, Amazon Web
+                Services (AWS S3), ReactJS, Figma, Axios (RESTFUL API),
+                ContextAPI, Google Cloud Platform, Node + Express + Sequelize,
+                GPS, CelCoin Pagamentos, Scrum + Kanban + Trello, Git + Github
+                (Control de versiones)
+              </p>
+            </div>
+            <div class="experience-item animate-on-scroll" id="we-saisa">
+              <h4>
+                SAISA
+                <span class="dates">[Marzo de 2018 – Diciembre de 2018]</span>
+              </h4>
+              <p>
+                Creación de una aplicación en Android (EBE Tracking) para el
+                control de entrada a edificios a través de registros digitales
+                de entrada y salida de personal, vehículos, mercancías, etc.
+              </p>
+              <p>
+                <strong>Tecnologías:</strong> Javascript, HTML5 + CSS3, PHP +
+                PDO, Adobe Illustrator, jQuery Mobile, Cordova, MySQL, Adobe
+                Photoshop
+              </p>
+            </div>
+            <div class="experience-item animate-on-scroll" id="we-petropiar">
+              <h4>
+                Empresa MIXTA PETROPIAR, S.A. (Venezuela)
+                <span class="dates">[Marzo de 2017 – Noviembre de 2017]</span>
+              </h4>
+              <p>
+                Desarrollo de una aplicación web para el control y monitoreo de
+                procesos de contratación desde que son generados por los
+                gerentes solicitantes hasta su firma entre la empresa mixta
+                PETROPIAR, S.A. y los contratistas.
+              </p>
+              <p>
+                <strong>Tecnologías:</strong> Javascript, HTML5 + CSS3, ExtJS,
+                PHP + PDO, MySQL, SVN
+              </p>
+            </div>
           </div>
 
-          <div class="section-title animate-on-scroll">
+          <div
+            class="section-title animate-on-scroll"
+            id="protocols-and-skills-title"
+          >
             // Protocolos y Habilidades
           </div>
-          <ul class="skills-list">
+          <ul class="skills-list" id="protocols-and-skills-list">
             <li class="animate-on-scroll">
               Conocimiento en la creación de aplicaciones para iOS y Android,
               desde el inicio hasta la publicación en la AppStore y PlayStore,
@@ -873,7 +992,7 @@
               de diseño MVC/MVVM.
             </li>
             <li class="animate-on-scroll">
-              Disposición para enfrentar nuevos desafíos de manera dinámica y
+              Disposición para enfrentar nuevos desafíos de manera dináØmica y
               tomar la iniciativa.
             </li>
             <li class="animate-on-scroll">
@@ -889,14 +1008,60 @@
       </div>
 
       <div class="cv-footer animate-on-scroll">
-        <p>
-          // Ejecución Exitosa: Hecho con
+        <p id="cv-footer-text">
+          // Criado con
           <span style="color: red">&hearts;</span> por Jean Paul Rojas Véliz
         </p>
       </div>
 
+      <!-- Contenedor de botones de idioma -->
+      <div class="language-switcher">
+        <button
+          onclick="changeLanguage('en')"
+          title="English"
+          id="lang-en-button"
+        >
+          <img src="assets/usa.png" alt="English" id="lang-en-flag" />
+        </button>
+        <button
+          onclick="changeLanguage('es')"
+          title="Español"
+          id="lang-es-button"
+        >
+          <img src="assets/spa.png" alt="Español" id="lang-es-flag" />
+        </button>
+        <button
+          onclick="changeLanguage('pt')"
+          title="Português"
+          id="lang-pt-button"
+        >
+          <img src="assets/bra.png" alt="Português" id="lang-pt-flag" />
+        </button>
+      </div>
+
       <script>
-        document.addEventListener('DOMContentLoaded', function () {
+        let languageData = {}; // Para almacenar los datos de idioma cargados
+        let observer; // Declarar observer en un ámbito más amplio
+
+        async function fetchLanguageData(lang) {
+          if (languageData[lang]) {
+            return languageData[lang];
+          }
+          try {
+            const response = await fetch(`json/${lang}.json`);
+            if (!response.ok) {
+              throw new Error(`Error al cargar el archivo JSON para ${lang}`);
+            }
+            const data = await response.json();
+            languageData[lang] = data;
+            return data;
+          } catch (error) {
+            console.error(error);
+            return null;
+          }
+        }
+
+        document.addEventListener('DOMContentLoaded', async function () {
           const animateElements =
             document.querySelectorAll('.animate-on-scroll');
 
@@ -906,11 +1071,11 @@
             threshold: 0.1, // 10% del elemento visible para activar
           };
 
-          const observer = new IntersectionObserver((entries, observer) => {
+          observer = new IntersectionObserver((entries, observer) => {
+            // Asignar a la variable global
             entries.forEach((entry) => {
               if (entry.isIntersecting) {
                 entry.target.classList.add('is-visible');
-                // Si solo quieres que la animación se ejecute una vez
                 observer.unobserve(entry.target);
               }
             });
@@ -919,7 +1084,207 @@
           animateElements.forEach((element) => {
             observer.observe(element);
           });
+
+          // Cargar idioma por defecto (inglés) al inicio
+          const defaultLang = 'en';
+          const defaultLangData = await fetchLanguageData(defaultLang);
+          if (defaultLangData) {
+            applyLanguageContent(defaultLang, defaultLangData);
+            document.documentElement.lang = defaultLang;
+          }
+
+          window.changeLanguage = async function (lang) {
+            const data = await fetchLanguageData(lang);
+            if (data) {
+              applyLanguageContent(lang, data);
+              document.documentElement.lang = lang; // Actualizar atributo lang del HTML
+            } else {
+              // Usa el mensaje de error del JSON o uno predeterminado
+              const errorMessage =
+                languageData.en?.script_messages.language_change_alert.replace(
+                  '{lang}',
+                  lang
+                ) || `Error al cargar el contenido del idioma: ${lang}`;
+              alert(errorMessage);
+            }
+          };
         });
+
+        function applyLanguageContent(lang, data) {
+          if (!data) return;
+
+          // Actualizar título de la página
+          document.getElementById('cv-page-title').textContent =
+            data.page_title;
+
+          // Actualizar encabezado
+          document.getElementById('cv-name').textContent = data.header.name;
+          document.getElementById('cv-job-title').textContent =
+            data.header.job_title;
+          document.getElementById('cv-profile-picture').alt =
+            data.profile.profile_picture_alt;
+
+          // Actualizar títulos de secciones
+          document.getElementById('personal-info-title').textContent =
+            data.sections.personal_info.title;
+          document.getElementById('education-title').textContent =
+            data.sections.education.title;
+          document.getElementById('languages-title').textContent =
+            data.sections.languages.title;
+          document.getElementById('technical-skills-title').textContent =
+            data.sections.technical_skills.title;
+          document.getElementById('work-experience-title').textContent =
+            data.sections.work_experience.title;
+          document.getElementById('protocols-and-skills-title').textContent =
+            data.sections.protocols_and_skills.title;
+
+          // Información personal
+          document.getElementById('personal-info-address-label').textContent =
+            data.sections.personal_info.address;
+          document.getElementById('personal-info-address-value').textContent =
+            data.sections.personal_info.address_value;
+          document.getElementById('personal-info-phone-label').textContent =
+            data.sections.personal_info.phone;
+          document.getElementById('personal-info-phone-value').textContent =
+            data.sections.personal_info.phone_value;
+          document.getElementById('personal-info-email-label').textContent =
+            data.sections.personal_info.email;
+          document.getElementById('personal-info-email-value').textContent =
+            data.sections.personal_info.email_value;
+
+          document.getElementById('personal-info-linkedin-label').textContent =
+            data.sections.personal_info.linkedin;
+          const linkedinLink = document.getElementById(
+            'personal-info-linkedin-value'
+          );
+          linkedinLink.textContent = data.sections.personal_info.linkedin_url;
+          linkedinLink.href = `https://${data.sections.personal_info.linkedin_url}`;
+
+          document.getElementById('personal-info-github-label').textContent =
+            data.sections.personal_info.github;
+          const githubLink = document.getElementById(
+            'personal-info-github-value'
+          );
+          githubLink.textContent = data.sections.personal_info.github_url;
+          githubLink.href = `https://${data.sections.personal_info.github_url}`;
+
+          // Formación
+          document.getElementById('education-degree').textContent =
+            data.sections.education.degree;
+          document.getElementById('education-university').textContent =
+            data.sections.education.university;
+          document.getElementById('education-date').textContent =
+            data.sections.education.date;
+
+          // Idiomas
+          document.getElementById('language-spanish').textContent =
+            data.sections.languages.spanish;
+          document.getElementById('language-portuguese').textContent =
+            data.sections.languages.portuguese;
+          document.getElementById('language-english').textContent =
+            data.sections.languages.english;
+
+          // Habilidades técnicas
+          const technicalSkillsList = document.getElementById(
+            'technical-skills-list'
+          );
+          technicalSkillsList.innerHTML = ''; // Limpiar lista existente
+          data.sections.technical_skills.items.forEach((item) => {
+            const li = document.createElement('li');
+            li.classList.add('animate-on-scroll', 'is-visible');
+            li.textContent = item;
+            technicalSkillsList.appendChild(li);
+            observer.observe(li);
+          });
+
+          // Experiencia laboral
+          const workExperienceContainer = document.getElementById(
+            'work-experience-list-container'
+          );
+
+          // Limpiar lista existente
+          workExperienceContainer.innerHTML = '';
+
+          for (const key in data.sections.work_experience) {
+            if (key === 'title') continue; // Saltar el título si existe
+            const experience = data.sections.work_experience[key];
+            const div = document.createElement('div');
+            div.classList.add('experience-item', 'animate-on-scroll');
+            div.id = `we-${key}`;
+
+            observer.observe(div);
+            const h4 = document.createElement('h4');
+            const companySpan = document.createElement('span'); // Crear un span para el nombre de la compañía
+            companySpan.textContent = experience.company;
+            h4.appendChild(companySpan);
+
+            const datesSpan = document.createElement('span');
+            datesSpan.classList.add('dates'); // Asegurar que la clase 'dates' se añada
+            datesSpan.textContent = experience.dates;
+            h4.appendChild(datesSpan);
+            div.appendChild(h4);
+
+            // Descripciones
+            const descriptions = [];
+            let descIndex = 1;
+            while (experience[`description_${descIndex}`]) {
+              descriptions.push(experience[`description_${descIndex}`]);
+              descIndex++;
+            }
+            if (experience.description) {
+              descriptions.push(experience.description);
+            }
+
+            descriptions.forEach((desc) => {
+              if (desc) {
+                const p = document.createElement('p');
+                p.textContent = desc;
+                div.appendChild(p);
+              }
+            });
+
+            // Tecnologías
+            if (experience.technologies) {
+              const pTech = document.createElement('p');
+              pTech.innerHTML = `<strong>${
+                experience.technologies_label || 'Tecnologías:'
+              }</strong> ${experience.technologies}`;
+              div.appendChild(pTech);
+            }
+            workExperienceContainer.appendChild(div);
+          }
+
+          // Protocolos y Habilidades
+          const protocolsAndSkillsList = document.getElementById(
+            'protocols-and-skills-list'
+          );
+          protocolsAndSkillsList.innerHTML = ''; // Limpiar lista existente
+          data.sections.protocols_and_skills.items.forEach((item) => {
+            const li = document.createElement('li');
+            li.classList.add('animate-on-scroll');
+            li.textContent = item;
+            protocolsAndSkillsList.appendChild(li);
+            observer.observe(li);
+          });
+
+          // Pie de página
+          const footerText = document.getElementById('cv-footer-text');
+          footerText.innerHTML = `${data.footer.created_with} <span style="color: red">&hearts;</span> ${data.footer.author}`;
+
+          // Botones de idioma
+          document.getElementById('lang-en-button').title =
+            data.language_switcher.english_button_title;
+          document.getElementById('lang-en-flag').alt =
+            data.language_switcher.english_flag_alt;
+          document.getElementById('lang-es-button').title =
+            data.language_switcher.spanish_button_title;
+          document.getElementById('lang-es-flag').alt =
+            data.language_switcher.spanish_flag_alt;
+          document.getElementById('lang-pt-button').title =
+            data.language_switcher.portuguese_button_title;
+          document.getElementById('lang-pt-flag').alt =
+            data.language_switcher.portuguese_flag_alt;
+        }
       </script>
     </div>
   </body>

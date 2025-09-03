@@ -1,0 +1,125 @@
+{
+  "page_title": "CV - Jean Paul Rojas Véliz | DEDSEC",
+  "header": {
+    "name": "Jean Paul Rojas Véliz",
+    "job_title": "ENGENHEIRO DE SISTEMAS"
+  },
+  "profile": {
+    "profile_picture_alt": "Foto de Perfil"
+  },
+  "sections": {
+    "personal_info": {
+      "title": "// INFORMAÇÕES PESSOAIS",
+      "address": "Endereço:",
+      "address_value": "Curitiba - PR - Brasil",
+      "phone": "Telefone:",
+      "phone_value": "+55 (41) 98762-3549",
+      "email": "Email:",
+      "email_value": "ingjeanpaulrojas@gmail.com",
+      "linkedin": "LinkedIn:",
+      "linkedin_url": "linkedin.com/in/jeanpaul-rojasv",
+      "github": "Github:",
+      "github_url": "github.com/eccianime"
+    },
+    "education": {
+      "title": "// FORMAÇÃO",
+      "degree": "Engenheiro de Sistemas",
+      "university": "Universidade do Oriente",
+      "date": "Venezuela - Dezembro 2017"
+    },
+    "languages": {
+      "title": "// IDIOMAS",
+      "spanish": "Espanhol - Nativo",
+      "portuguese": "Português - Fluente",
+      "english": "Inglês - Fluente"
+    },
+    "technical_skills": {
+      "title": "// HABILIDADES TÉCNICAS",
+      "items": [
+        "Styled Components (4 anos)",
+        "Native Base / NativeWind (4 anos)",
+        "Firebase (4 anos)",
+        "NPM / NVM / Yarn (4 anos)",
+        "Postman / Insomnia (4 anos)",
+        "Bitbucket / Confluence (4 anos)",
+        "Storybook Components"
+      ]
+    },
+    "work_experience": {
+      "title": "// EXPERIÊNCIA PROFISSIONAL",
+      "vector_casa_de_bolsa": {
+        "company": "Vector Casa de Bolsa",
+        "dates": "[Outubro 2023 – Agosto 2025]",
+        "description": "Desenvolvimento de aplicação financeira com o objetivo de promover investimentos no mercado mexicano. Inclui assistência via Inteligência Artificial, desenvolvida internamente, interação com agentes humanos, entrada com biometria e técnicas de ofuscação de código para manter altas medidas de segurança.",
+        "technologies": "React Native CLI, Redux Toolkit, Apollo GraphQL Client, AWS, Biometrics, Sentry, Figma, Lottie, LaunchDarkly, Apple AppStore Connect e PlayStore Dev Account (Publicação em lojas), Scrum + Kanban, Jira + Git + Github."
+      },
+      "xgrow_tecnologia": {
+        "company": "XGROW Tecnologia",
+        "dates": "[Outubro de 2022 – Outubro 2023]",
+        "description_1": "Desenvolvimento de aplicativos educacionais (Android e iOS) para assistir a vídeos de educação financeira como parte das campanhas de educação de Pablo Marçal \"O pior ano da sua vida\", \"Million Clube\", \"Clube459\" e \"Movimento Virando Investidor\".",
+        "description_2": "Desenvolvimento de aplicativo de transporte de passageiros, e envio/recepção de pacotes para clientes de delivery com serviço de chat e geolocalização em tempo real usando os serviços de aplicação do Firebase.",
+        "technologies": "React Native, Expo-EAS, Firebase, CSS + Styled Components, Figma, Axios, Redux Toolkit, Scrum + Kanban, Jira + Git + Github, Apple AppStore Connect e PlayStore Dev Account (Publicação em lojas)"
+      },
+      "envixo_sistemas": {
+        "company": "Envixo Sistemas LTDA",
+        "dates": "[Agosto de 2020 – Setembro de 2022]",
+        "description_1": "Desenvolvimento de um aplicativo de comércio eletrônico (Android e iOS) relacionado à venda de hambúrgueres de frango e carne para clientes de Angola.",
+        "description_2": "Desenvolvimento de um aplicativo de lavanderia (Android e iOS) tipo comércio eletrônico para coletar e entregar roupas a clientes de Portugal.",
+        "description_3": "Desenvolvimento de um aplicativo multilíngue (inglês / alemão) (Android e iOS) para controlar remotamente um berço por um tempo predefinido e com luzes coloridas que servem para relaxar a criança.",
+        "technologies": "React Native + JavaScript + TypeScript, Expo Dev Client + EAS, Jest + RN Testing library (testes), Redux + Redux Toolkit, Figma (UI-UX), Axios + ReactQuery (API RESTFUL), Scrum + Kanban, Jira + Github, Apple AppStore Connect e PlayStore Dev Account (Publicação em lojas)"
+      },
+      "mg_network": {
+        "company": "MG Network Marketing Digital LTDA",
+        "dates": "[Maio de 2019 – Julho de 2020]",
+        "description_1": "Criação e manutenção de um site para a venda de passagens de ônibus no Brasil, América, Espanha, Portugal e Reino Unido na Europa.",
+        "description_2": "Desenvolvimento de aplicativo para o cadastro de clientes e fazendas, bem como ordens de compra de sementes em locais sem conexão com a internet, onde todos os dados são pré-carregados, os pedidos são criados offline e depois sincronizados com o banco de dados quando o dispositivo volta a ter sinal de celular."
+      },
+      "trentim_gestao": {
+        "company": "Trentim Gestão e Tecnologia, LTD",
+        "dates": "[Janeiro de 2018 – Abril de 2019]",
+        "description_1": "Início de um projeto estilo Fintech / Kickstarter para integrar óculos inteligentes e listas de presentes, onde os usuários faziam contribuições para cada lista. As lojas eram pesquisadas por distância (GPS), os usuários eram notificados quando sua lista recebia uma contribuição e a contribuição era formalizada com carrinhos de compras.",
+        "description_2": "Desenvolvimento de um aplicativo web para a venda de cursos online na área de fitness. Através deste aplicativo, os clientes, após se registrarem, podiam assinar vídeos de instrutores que mostravam diferentes técnicas de exercícios e rotinas para perder peso.",
+        "technologies": "React Native + Expo, Amazon Web Services (AWS S3), ReactJS, Figma, Axios (API RESTFUL), ContextAPI, Google Cloud Platform, Node + Express + Sequelize, GPS, CelCoin Pagamentos, Scrum + Kanban + Trello, Git + Github (Controle de versões)"
+      },
+      "saisa": {
+        "company": "SAISA",
+        "dates": "[Março de 2018 – Dezembro de 2018]",
+        "description": "Criação de um aplicativo Android (EBE Tracking) para o controle de entrada em edifícios através de registros digitais de entrada e saída de pessoal, veículos, mercadorias, etc.",
+        "technologies": "Javascript, HTML5 + CSS3, PHP + PDO, Adobe Illustrator, jQuery Mobile, Cordova, MySQL, Adobe Photoshop"
+      },
+      "petropiar": {
+        "company": "Empresa MISTA PETROPIAR, S.A. (Venezuela)",
+        "dates": "[Março de 2017 – Novembro de 2017]",
+        "description": "Desenvolvimento de um aplicativo web para o controle e monitoramento de processos de contratação desde que são gerados pelos gerentes solicitantes até sua assinatura entre a empresa mista PETROPIAR, S.A. e os contratados.",
+        "technologies": "Javascript, HTML5 + CSS3, ExtJS, PHP + PDO, MySQL, SVN"
+      }
+    },
+    "protocols_and_skills": {
+      "title": "// Habilidades",
+      "items": [
+        "Conhecimento na criação de aplicativos para iOS e Android, do início à publicação na AppStore e PlayStore, utilizando React Native CLI e EAS.",
+        "Aplicação das melhores práticas de programação através dos princípios SOLID e regras para criar código limpo e escalável usando princípios de desenvolvimento KISS, DRY e YAGNI.",
+        "Design de bancos de dados relacionais e não relacionais, desde ferramentas de design até designs conceituais utilizando ferramentas de UML como casos de uso, diagramas de estados, diagramas de fluxo, etc.",
+        "Conhecimento do paradigma da Orientação a Objetos e padrões de design MVC/MVVM.",
+        "Disposição para enfrentar novos desafios de forma dinâmica e tomar a iniciativa.",
+        "Adaptação rápida a qualquer ambiente de trabalho de forma eficiente e organizada.",
+        "Facilidade para trabalhar em equipe e manter boas relações interpessoais."
+      ]
+    }
+  },
+  "footer": {
+    "created_with": "// Criado com",
+    "author": "por Jean Paul Rojas Véliz"
+  },
+  "language_switcher": {
+    "english_button_title": "Inglês",
+    "english_flag_alt": "Inglês",
+    "spanish_button_title": "Espanhol",
+    "spanish_flag_alt": "Espanhol",
+    "portuguese_button_title": "Português",
+    "portuguese_flag_alt": "Português"
+  },
+  "script_messages": {
+    "language_change_alert": "Idioma alterado para: {lang}. Você deve implementar a lógica de mudança de conteúdo."
+  }
+}

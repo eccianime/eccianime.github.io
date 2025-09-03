@@ -1,0 +1,132 @@
+{
+  "page_title": "CV - Jean Paul Rojas Véliz",
+  "header": {
+    "name": "Jean Paul Rojas Véliz",
+    "job_title": "SYSTEMS ENGINEER"
+  },
+  "profile": {
+    "profile_picture_alt": "Profile Picture"
+  },
+  "sections": {
+    "personal_info": {
+      "title": "// PERSONAL INFORMATION",
+      "address": "Address:",
+      "address_value": "Curitiba - PR - Brazil",
+      "phone": "Phone:",
+      "phone_value": "+55 (41) 98762-3549",
+      "email": "Email:",
+      "email_value": "ingjeanpaulrojas@gmail.com",
+      "linkedin": "LinkedIn:",
+      "linkedin_url": "linkedin.com/in/jeanpaul-rojasv",
+      "github": "Github:",
+      "github_url": "github.com/eccianime"
+    },
+    "education": {
+      "title": "// EDUCATION",
+      "degree": "Systems Engineer",
+      "university": "Universidad de Oriente",
+      "date": "Venezuela - December 2017"
+    },
+    "languages": {
+      "title": "// LANGUAGES",
+      "spanish": "Spanish - Native",
+      "portuguese": "Portuguese - Fluent",
+      "english": "English - Fluent"
+    },
+    "technical_skills": {
+      "title": "// TECHNICAL SKILLS",
+      "items": [
+        "Styled Components (4 years)",
+        "Native Base / NativeWind (4 years)",
+        "Firebase (4 years)",
+        "NPM / NVM / Yarn (4 years)",
+        "Postman / Insomnia (4 years)",
+        "Bitbucket / Confluence (4 years)",
+        "Storybook Components"
+      ]
+    },
+    "work_experience": {
+      "title": "// WORK EXPERIENCE",
+      "vector_casa_de_bolsa": {
+        "company": "Vector Casa de Bolsa",
+        "dates": "[October 2023 – August 2025]",
+        "description": "Development of a financial application with the objective of promoting investments in the Mexican market. It includes Artificial Intelligence assistance, developed internally, interaction with human agents, biometric login, and code obfuscation techniques to maintain high security measures.",
+        "technologies": "React Native CLI, Redux Toolkit, Apollo GraphQL Client, AWS, Biometrics, Sentry, Figma, Lottie, LaunchDarkly, Apple AppStore Connect and PlayStore Dev Account (Store Publishing), Scrum + Kanban, Jira + Git + Github.",
+        "technologies_label": "Technologies:"
+      },
+      "xgrow_tecnologia": {
+        "company": "XGROW Tecnologia",
+        "dates": "[October 2022 – October 2023]",
+        "description_1": "Development of educational applications (Android and iOS) to watch financial education videos as part of Pablo Marçal's education campaigns \"The Worst Year of Your Life\", \"Million Clube\", \"Clube459\", and \"Movimento Virando Investidor\".",
+        "description_2": "Development of a passenger transportation application, and package sending/receiving for delivery clients with chat service and real-time geolocation using Firebase application services.",
+        "technologies": "React Native, Expo-EAS, Firebase, CSS + Styled Components, Figma, Axios, Redux Toolkit, Scrum + Kanban, Jira + Git + Github, Apple AppStore Connect and PlayStore Dev Account (Store Publishing)",
+        "technologies_label": "Technologies:"
+      },
+      "envixo_sistemas": {
+        "company": "Envixo Sistemas LTDA",
+        "dates": "[August 2020 – September 2022]",
+        "description_1": "Development of an e-commerce application (Android and iOS) related to the sale of chicken and beef burgers for Angolan clients.",
+        "description_2": "Development of an e-commerce type laundry application (Android and iOS) to pick up and deliver clothes to clients in Portugal.",
+        "description_3": "Development of a multilingual application (English / German) (Android and iOS) to remotely control a crib for a predefined time and with colored lights that serves to relax the child.",
+        "technologies": "React Native + JavaScript + TypeScript, Expo Dev Client + EAS, Jest + RN Testing library (tests), Redux + Redux Toolkit, Figma (UI-UX), Axios + ReactQuery (RESTFUL API), Scrum + Kanban, Jira + Github, Apple AppStore Connect and PlayStore Dev Account (Store Publishing)",
+        "technologies_label": "Technologies:"
+      },
+      "mg_network": {
+        "company": "MG Network Marketing Digital LTDA",
+        "dates": "[May 2019 – July 2020]",
+        "description_1": "Creation and maintenance of a website for selling bus tickets in Brazil, America, Spain, Portugal, and the United Kingdom in Europe.",
+        "description_2": "Development of an application for registering clients and farms, as well as purchase orders for seeds in places without internet connection, where all data is preloaded, orders are created offline and then synchronized with the database when the device regains cellular signal.",
+        "technologies_label": "Technologies:"
+      },
+      "trentim_gestao": {
+        "company": "Trentim Gestão e Tecnologia, LTD",
+        "dates": "[January 2018 – April 2019]",
+        "description_1": "Initiation of a Fintech / Kickstarter style project to integrate smart glasses and gift lists, where users made contributions to each list. Stores were searched by distance (GPS), users were notified when their list received a contribution, and the contribution was formalized with shopping carts.",
+        "description_2": "Development of a web application for selling online courses in the fitness field. Through this application, clients, after registering, could subscribe to videos from instructors showing different exercise techniques and routines to lose weight.",
+        "technologies": "React Native + Expo, Amazon Web Services (AWS S3), ReactJS, Figma, Axios (RESTFUL API), ContextAPI, Google Cloud Platform, Node + Express + Sequelize, GPS, CelCoin Pagamentos, Scrum + Kanban + Trello, Git + Github (Version Control)",
+        "technologies_label": "Technologies:"
+      },
+      "saisa": {
+        "company": "SAISA",
+        "dates": "[March 2018 – December 2018]",
+        "description": "Creation of an Android application (EBE Tracking) for building entry control through digital records of personnel, vehicle, merchandise entry and exit, etc.",
+        "technologies": "Javascript, HTML5 + CSS3, PHP + PDO, Adobe Illustrator, jQuery Mobile, Cordova, MySQL, Adobe Photoshop",
+        "technologies_label": "Technologies:"
+      },
+      "petropiar": {
+        "company": "Empresa MIXTA PETROPIAR, S.A. (Venezuela)",
+        "dates": "[March 2017 – November 2017]",
+        "description": "Development of a web application for the control and monitoring of contracting processes from when they are generated by requesting managers until their signature between the mixed company PETROPIAR, S.A. and contractors.",
+        "technologies": "Javascript, HTML5 + CSS3, ExtJS, PHP + PDO, MySQL, SVN",
+        "technologies_label": "Technologies:"
+      }
+    },
+    "protocols_and_skills": {
+      "title": "// Skills",
+      "items": [
+        "Knowledge in creating applications for iOS and Android, from inception to publication on the AppStore and PlayStore, using React Native CLI and EAS.",
+        "Application of best programming practices through SOLID principles and rules to create clean and scalable code using KISS, DRY, and YAGNI development principles.",
+        "Design of relational and non-relational databases, from design tools to conceptual designs using UML tools such as use cases, state diagrams, flowcharts, etc.",
+        "Knowledge of Object-Oriented Programming paradigm and MVC/MVVM design patterns.",
+        "Readiness to face new challenges dynamically and take initiative.",
+        "Rapid adaptation to any work environment efficiently and organized.",
+        "Ability to work in a team and maintain good interpersonal relationships."
+      ]
+    }
+  },
+  "footer": {
+    "created_with": "// Created with",
+    "author": "by Jean Paul Rojas Véliz"
+  },
+  "language_switcher": {
+    "english_button_title": "English",
+    "english_flag_alt": "English",
+    "spanish_button_title": "Spanish",
+    "spanish_flag_alt": "Spanish",
+    "portuguese_button_title": "Portuguese",
+    "portuguese_flag_alt": "Portuguese"
+  },
+  "script_messages": {
+    "language_change_alert": "Language changed to: {lang}. You must implement the content change logic."
+  }
+}
