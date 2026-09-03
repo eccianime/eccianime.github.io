@@ -19,7 +19,7 @@ export function Portfolio() {
         <Hero />
         <About />
         <Experience />
-        <Projects />
+        {/* <Projects /> */}
         <Expertise />
         {/* <Testimonials /> */}
         <Contact />
