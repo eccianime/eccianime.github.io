@@ -15,7 +15,7 @@ export function Nav() {
   }, []);
 
   const links = [
-    { href: "#work", label: t("nav.work") },
+    // { href: "#work", label: t("nav.work") },
     { href: "#about", label: t("nav.about") },
     { href: "#experience", label: t("nav.experience") },
     { href: "#expertise", label: t("nav.expertise") },
