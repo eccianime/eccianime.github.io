@@ -4,6 +4,7 @@ import { useRef } from "react";
 
 export function ProjectCard(
   props: Readonly<{
+    id: string;
     title: string;
     category: string;
     description: string;
@@ -16,6 +17,7 @@ export function ProjectCard(
     viewCase: string;
     viewLive: string;
     viewGithub: string;
+    onClick: () => void;
   }>,
 ) {
   const ref = useRef<HTMLDivElement>(null);
@@ -33,14 +35,25 @@ export function ProjectCard(
     x.set(0);
     y.set(0);
   };
+  const onKeyDown = (e: React.KeyboardEvent<HTMLDivElement>) => {
+    if (e.key === "Enter" || e.key === " ") {
+      e.preventDefault();
+      props.onClick();
+    }
+  };
 
   return (
     <motion.div
       ref={ref}
+      role="button"
+      tabIndex={0}
+      aria-label={`View ${props.title} details`}
       onMouseMove={onMove}
       onMouseLeave={onLeave}
+      onKeyDown={onKeyDown}
+      onClick={props.onClick}
       style={{ rotateX, rotateY, transformPerspective: 1200 }}
-      className="group relative rounded-3xl overflow-hidden glass hairline shadow-elevated"
+      className="group relative rounded-3xl overflow-hidden glass hairline shadow-elevated cursor-pointer"
     >
       <div className="relative aspect-[16/10] overflow-hidden bg-surface">
         <motion.img
@@ -88,6 +101,7 @@ export function ProjectCard(
             <a
               href={props.liveUrl}
               className="inline-flex items-center gap-1 hover:text-foreground text-muted-foreground transition-colors"
+              target="_blank"
             >
               {props.viewLive} <ArrowUpRight className="h-3.5 w-3.5" />
             </a>

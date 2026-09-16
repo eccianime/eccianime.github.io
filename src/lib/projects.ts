@@ -1,7 +1,28 @@
-import projectFintech from "@/assets/project-fintech.jpg";
-import projectAi from "@/assets/project-ai.jpg";
-import projectLearning from "@/assets/project-learning.jpg";
-import projectRealtime from "@/assets/project-realtime.jpg";
+import xgrowLogo from "@/assets/projects/xgrow/logo.webp";
+import xgrow1 from "@/assets/projects/xgrow/1.webp";
+import xgrow2 from "@/assets/projects/xgrow/2.webp";
+import xgrow3 from "@/assets/projects/xgrow/3.webp";
+import xgrow4 from "@/assets/projects/xgrow/4.webp";
+
+import sigicLogo from "@/assets/projects/sigic/logo.webp";
+import sigic1 from "@/assets/projects/sigic/1.webp";
+import sigic2 from "@/assets/projects/sigic/2.webp";
+import sigic3 from "@/assets/projects/sigic/3.webp";
+import sigic4 from "@/assets/projects/sigic/4.webp";
+import sigic5 from "@/assets/projects/sigic/5.webp";
+
+import jogamaisLogo from "@/assets/projects/jogamais/logo.webp";
+import jogamais1 from "@/assets/projects/jogamais/1.webp";
+import jogamais2 from "@/assets/projects/jogamais/2.webp";
+import jogamais3 from "@/assets/projects/jogamais/3.webp";
+
+import gipsyyLogo from "@/assets/projects/gipsyy/logo.webp";
+import gipsyy1 from "@/assets/projects/gipsyy/1.webp";
+import gipsyy2 from "@/assets/projects/gipsyy/2.webp";
+import gipsyy3 from "@/assets/projects/gipsyy/3.webp";
+import gipsyy4 from "@/assets/projects/gipsyy/4.webp";
+import gipsyy5 from "@/assets/projects/gipsyy/5.webp";
+import gipsyy6 from "@/assets/projects/gipsyy/6.webp";
 
 export type Project = {
   id: string;
@@ -9,6 +30,7 @@ export type Project = {
   category: string;
   description: { en: string; es: string; pt: string };
   thumbnail: string;
+  carousel?: string[];
   stack: string[];
   screenshots?: string[];
   videoUrl?: string;
@@ -20,60 +42,64 @@ export type Project = {
 
 export const projects: Project[] = [
   {
-    id: "vector-trading",
-    title: "Vector Trading",
-    category: "Fintech · Mobile",
-    description: {
-      en: "Brokerage trading app with real-time market data, advanced charting, and order management — built for retail investors in LATAM.",
-      es: "App de trading bursátil con datos de mercado en tiempo real, gráficos avanzados y gestión de órdenes para inversores minoristas en LATAM.",
-      pt: "App de trading com dados de mercado em tempo real, gráficos avançados e gestão de ordens — para investidores de varejo na LATAM.",
-    },
-    thumbnail: projectFintech,
-    stack: ["React Native", "TypeScript", "WebSockets", "Node.js", "AWS"],
-    year: "2024",
-    liveUrl: "#",
-  },
-  {
-    id: "ai-companion",
-    title: "AI Companion",
-    category: "AI · Mobile",
-    description: {
-      en: "Conversational AI app powered by OpenAI and Claude, with custom RAG over user documents and voice-first interactions.",
-      es: "App de IA conversacional con OpenAI y Claude, con RAG sobre documentos del usuario e interacciones por voz.",
-      pt: "App de IA conversacional com OpenAI e Claude, com RAG sobre documentos do usuário e interações por voz.",
-    },
-    thumbnail: projectAi,
-    stack: ["React Native", "OpenAI", "Claude", "Pinecone", "Edge Functions"],
-    year: "2024",
-    caseStudyUrl: "#",
-  },
-  {
     id: "xgrow-learning",
     title: "XGrow Learning",
-    category: "EdTech · Platform",
+    category: "EdTech",
     description: {
       en: "Course platform serving 100k+ students with mobile-first learning experiences, offline lessons, and creator analytics.",
       es: "Plataforma de cursos con +100k estudiantes, experiencias móviles, lecciones offline y analíticas para creadores.",
       pt: "Plataforma de cursos com +100k alunos, experiências mobile-first, lições offline e analytics para criadores.",
     },
-    thumbnail: projectLearning,
+    thumbnail: xgrowLogo,
+    carousel: [xgrow1, xgrow2, xgrow3, xgrow4],
     stack: ["React Native", "Next.js", "GraphQL", "Firebase"],
     year: "2023",
-    liveUrl: "#",
+    liveUrl: "https://play.google.com/store/apps/details?id=com.xgrow.learningarea",
   },
   {
-    id: "realtime-ops",
-    title: "Realtime Operations",
-    category: "Energy · Dashboard",
+    id: "sigic",
+    title: "SIGIC",
+    category: "Civil Protection",
     description: {
-      en: "Real-time operations dashboard for energy field crews. Live telemetry, geofenced alerts, and offline-capable mobile companion app.",
-      es: "Dashboard de operaciones en tiempo real para equipos de campo. Telemetría en vivo, alertas geocercadas y app móvil offline.",
-      pt: "Dashboard de operações em tempo real para equipes de campo. Telemetria ao vivo, alertas por geofence e app mobile offline.",
+      en: "Support for Civil Protection teams in the organization of shelters during emergency situations.",
+      es: "Apoya a los equipos de Protección Civil en la organización de albergues durante situaciones de emergencia.",
+      pt: "Apoya a equipes de Proteção Civil na organização de albergues durante situações de emergência.",
     },
-    thumbnail: projectRealtime,
-    stack: ["React Native", "Node.js", "PostgreSQL", "MQTT", "Docker"],
-    year: "2023",
-    githubUrl: "#",
+    thumbnail: sigicLogo,
+    carousel: [sigic1, sigic2, sigic3, sigic4, sigic5],
+    stack: ["React Native", "Expo", "GraphQL", "Firebase"],
+    year: "2026",
+    liveUrl: "https://play.google.com/store/apps/details?id=com.setec.sigic",
+  },
+  {
+    id: "gipsyy",
+    title: "Gipsyy",
+    category: "Travel",
+    description: {
+      en: "Gipsyy is a platform for sale and ticketing of bus tickets in Brazil and other markets. It allows you to check routes, schedules, prices and travel options, as well as seat selection and digital purchase.",
+      es: "Gipsyy es una plataforma de venta y reserva de pasajes de autobús que conecta pasajeros con destinos en Brasil y otros mercados. Permite consultar rutas, horarios, precios y opciones de viaje, además de seleccionar asientos y realizar la compra de forma digital.",
+      pt: "Gipsyy é uma plataforma de venda e reserva de passagens de ônibus que conecta passageiros a destinos no Brasil e em outros mercados. A plataforma permite consultar rotas, horários, preços e opções de viagem, além de selecionar assentos e realizar a compra de forma digital.",
+    },
+    thumbnail: gipsyyLogo,
+    carousel: [gipsyy1, gipsyy2, gipsyy3, gipsyy4, gipsyy5, gipsyy6],
+    stack: ["React Native", "Expo", "GraphQL", "Firebase"],
+    year: "2021",
+    liveUrl: "https://play.google.com/store/apps/details?id=br.com.gipsyy.app",
+  },
+  {
+    id: "joga-mais",
+    title: "JOGA+",
+    category: "Game",
+    description: {
+      en: "The platform that has come to revolutionize amateur football. Through our app, teams can manage their games: send, receive, accept and reject game invitations in a practical and intuitive way.",
+      es: "Joga+ es una plataforma que ha llegado para revolucionar el fútbol amateur. A través de nuestra aplicación, los equipos pueden administrar sus juegos: enviar, recibir, aceptar y rechazar invitaciones a juegos de una manera práctica e intuitiva.",
+      pt: "Joga+ chegou para revolucionar o futebol amateur. Atrás da nossa app, os times podem gerenciar seus jogos: enviar, receber, aceitar e recusar convites de jogos de uma maneira prática e intuitiva.",
+    },
+    thumbnail: jogamaisLogo,
+    carousel: [jogamais1, jogamais2, jogamais3],
+    stack: ["React Native", "Expo", "GraphQL", "Firebase"],
+    year: "2021",
+    liveUrl: "https://play.google.com/store/apps/details?id=app.jogamais2",
   },
 ];
 
