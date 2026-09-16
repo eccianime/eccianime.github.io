@@ -24,6 +24,50 @@ import gipsyy4 from "@/assets/projects/gipsyy/4.webp";
 import gipsyy5 from "@/assets/projects/gipsyy/5.webp";
 import gipsyy6 from "@/assets/projects/gipsyy/6.webp";
 
+import futuraLogo from "@/assets/projects/futura/logo.webp";
+import futura1 from "@/assets/projects/futura/1.webp";
+import futura2 from "@/assets/projects/futura/2.webp";
+import futura3 from "@/assets/projects/futura/3.webp";
+
+import pauliLogo from "@/assets/projects/pauli/logo.webp";
+import pauli1 from "@/assets/projects/pauli/1.webp";
+import pauli2 from "@/assets/projects/pauli/2.webp";
+import pauli3 from "@/assets/projects/pauli/3.webp";
+import pauli4 from "@/assets/projects/pauli/4.webp";
+
+import muvLogo from "@/assets/projects/muv/logo.webp";
+import muv1 from "@/assets/projects/muv/1.webp";
+import muv2 from "@/assets/projects/muv/2.webp";
+import muv3 from "@/assets/projects/muv/3.webp";
+import muv4 from "@/assets/projects/muv/4.webp";
+
+import deliveryLogo from "@/assets/projects/delivery/logo.webp";
+import delivery1 from "@/assets/projects/delivery/1.webp";
+import delivery2 from "@/assets/projects/delivery/2.webp";
+import delivery3 from "@/assets/projects/delivery/3.webp";
+import delivery4 from "@/assets/projects/delivery/4.webp";
+
+import bluetoothLogo from "@/assets/projects/bluetooth/logo.webp";
+import bluetooth1 from "@/assets/projects/bluetooth/1.webp";
+import bluetooth2 from "@/assets/projects/bluetooth/2.webp";
+import bluetooth3 from "@/assets/projects/bluetooth/3.webp";
+import bluetooth4 from "@/assets/projects/bluetooth/4.webp";
+
+import neonLogo from "@/assets/projects/neon/logo.webp";
+import neon1 from "@/assets/projects/neon/1.webp";
+import neon2 from "@/assets/projects/neon/2.webp";
+import neon3 from "@/assets/projects/neon/3.webp";
+import neon4 from "@/assets/projects/neon/4.webp";
+import neon5 from "@/assets/projects/neon/5.webp";
+
+import boletoLogo from "@/assets/projects/boleto/logo.webp";
+import boleto1 from "@/assets/projects/boleto/1.webp";
+import boleto2 from "@/assets/projects/boleto/2.webp";
+import boleto3 from "@/assets/projects/boleto/3.webp";
+import boleto4 from "@/assets/projects/boleto/4.webp";
+import boleto5 from "@/assets/projects/boleto/5.webp";
+import boleto6 from "@/assets/projects/boleto/6.webp";
+
 export type Project = {
   id: string;
   title: string;
@@ -42,21 +86,6 @@ export type Project = {
 
 export const projects: Project[] = [
   {
-    id: "xgrow-learning",
-    title: "XGrow Learning",
-    category: "EdTech",
-    description: {
-      en: "Course platform serving 100k+ students with mobile-first learning experiences, offline lessons, and creator analytics.",
-      es: "Plataforma de cursos con +100k estudiantes, experiencias móviles, lecciones offline y analíticas para creadores.",
-      pt: "Plataforma de cursos com +100k alunos, experiências mobile-first, lições offline e analytics para criadores.",
-    },
-    thumbnail: xgrowLogo,
-    carousel: [xgrow1, xgrow2, xgrow3, xgrow4],
-    stack: ["React Native", "Next.js", "GraphQL", "Firebase"],
-    year: "2023",
-    liveUrl: "https://play.google.com/store/apps/details?id=com.xgrow.learningarea",
-  },
-  {
     id: "sigic",
     title: "SIGIC",
     category: "Civil Protection",
@@ -67,9 +96,85 @@ export const projects: Project[] = [
     },
     thumbnail: sigicLogo,
     carousel: [sigic1, sigic2, sigic3, sigic4, sigic5],
-    stack: ["React Native", "Expo", "GraphQL", "Firebase"],
+    stack: ["React Native", "Expo", "GraphQL", "Firebase", "EAS", "zustand", "geolocation"],
     year: "2026",
     liveUrl: "https://play.google.com/store/apps/details?id=com.setec.sigic",
+  },
+  {
+    id: "neon-sweeper",
+    title: "Neon Sweeper",
+    category: "Game",
+    description: {
+      en: "Neon Sweeper is a reinterpretation of the classic Minesweeper with a cyberpunk and retro-futuristic aesthetic. The game allows players to reveal cells, flag mines, and complete boards at different difficulty levels, including a custom mode. ",
+      es: "Neon Sweeper es una reinterpretación del clásico Buscaminas con una estética cyberpunk y retrofuturista. El juego permite descubrir casillas, marcar minas y completar tableros en diferentes niveles de dificultad, incluyendo un modo personalizado. ",
+      pt: "Neon Sweeper é uma releitura do clássico Campo Minado com uma estética cyberpunk e retrofuturista. O jogo permite revelar casas, marcar minas e completar tabuleiros em diferentes níveis de dificuldade, incluindo um modo personalizado.",
+    },
+    thumbnail: neonLogo,
+    carousel: [neon1, neon2, neon3, neon4, neon5],
+    stack: ["React", "Next.js", "zustand", "zod"],
+    year: "2026",
+    liveUrl: "https://play.google.com/store/apps/details?id=com.ingjeanpaulrojas.neonsweeper",
+  },
+  {
+    id: "editora-futura",
+    title: "Editora Futura",
+    category: "EdTech",
+    description: {
+      en: "Editora Futura is an educational platform focused on English learning through interactive content based on cognitive neuroscience. The app offers video and audio classes, exercises, games, quizzes, and personalized learning paths.",
+      es: "Editora Futura es una plataforma educativa enfocada en el aprendizaje del inglés mediante contenidos interactivos basados en neurociencia cognitiva. La aplicación ofrece clases en video y audio, ejercicios, juegos, quizzes y rutas de aprendizaje personalizadas.",
+      pt: "Editora Futura é uma plataforma educacional focada no aprendizado de inglês por meio de conteúdos interativos baseados em neurociência cognitiva. O aplicativo oferece aulas em vídeo e áudio, exercícios, jogos, quizzes e trilhas de aprendizado personalizadas.",
+    },
+    thumbnail: futuraLogo,
+    carousel: [futura1, futura2, futura3],
+    stack: ["Next.js", "React", "contextapi", "mongoDB", "zustand"],
+    year: "2025",
+    liveUrl: "https://play.google.com/store/apps/details?id=com.editorafutura",
+  },
+  {
+    id: "pauli-and-co",
+    title: "PAULI & CO",
+    category: "IoT",
+    description: {
+      en: "PAULI & CO is an application developed to control the motor of spring baby hammocks from the German brand PAULI & CO. It allows you to automatically start and stop the motor, configure the duration and intensity of the movement, and control aspects such as lighting and brightness.",
+      es: "PAULI & CO es una aplicación desarrollada para controlar el motor de hamacas de resorte para bebés de la marca alemana PAULI & CO. Permite iniciar y detener automáticamente el motor, configurar la duración e intensidad del movimiento y controlar aspectos como iluminación y brillo.",
+      pt: "PAULI & CO é um aplicativo desenvolvido para controlar o motor de balanços de mola para bebês da marca alemã PAULI & CO. Permite ligar e desligar automaticamente o motor, configurar a duração e a intensidade do movimento e controlar aspectos como iluminação e brilho.",
+    },
+    thumbnail: pauliLogo,
+    carousel: [pauli1, pauli2, pauli3, pauli4],
+    stack: ["React Native", "EAS", "native modules"],
+    year: "2024",
+    liveUrl: "https://play.google.com/store/apps/details?id=com.envixo.pauliundco.de",
+  },
+  {
+    id: "xgrow-learning",
+    title: "XGrow Learning",
+    category: "EdTech",
+    description: {
+      en: "Course platform serving 100k+ students with mobile-first learning experiences, offline lessons, and creator analytics.",
+      es: "Plataforma de cursos con +100k estudiantes, experiencias móviles, lecciones offline y analíticas para creadores.",
+      pt: "Plataforma de cursos com +100k alunos, experiências mobile-first, lições offline e analytics para criadores.",
+    },
+    thumbnail: xgrowLogo,
+    carousel: [xgrow1, xgrow2, xgrow3, xgrow4],
+    stack: ["React Native", "Next.js", "GraphQL", "Firebase", "EAS", "redux-toolkit"],
+    year: "2023",
+    liveUrl: "https://play.google.com/store/apps/details?id=com.xgrow.learningarea",
+  },
+  {
+    id: "delivery365",
+    title: "Delivery365",
+    category: "Logistics",
+    description: {
+      en: "Delivery365 is a mobile application for drivers and couriers that is part of a logistics management platform. It allows users to view and accept deliveries, check distances and addresses, use navigation, perform GPS tracking, and register proof of delivery through signatures, photographs, and recipient data.",
+      es: "Delivery365 es una aplicación móvil para conductores y repartidores que forma parte de una plataforma de gestión logística. Permite visualizar y aceptar entregas, consultar distancias y direcciones, utilizar navegación, realizar seguimiento GPS y registrar comprobantes de entrega mediante firmas, fotografías y datos del receptor.",
+      pt: "Delivery365 é um aplicativo móvel para motoristas e entregadores que faz parte de uma plataforma de gestão logística. Permite visualizar e aceitar entregas, consultar distâncias e endereços, usar navegação, realizar rastreamento GPS e registrar comprovantes de entrega por meio de assinaturas, fotografias e dados do destinatário.",
+    },
+    thumbnail: deliveryLogo,
+    carousel: [delivery1, delivery2, delivery3, delivery4],
+    stack: ["React Native", "EAS", "geolocation", "zustand"],
+    year: "2022",
+    liveUrl:
+      "https://play.google.com/store/apps/details?id=app.delivery365.deliveryman.delivery365",
   },
   {
     id: "gipsyy",
@@ -82,7 +187,7 @@ export const projects: Project[] = [
     },
     thumbnail: gipsyyLogo,
     carousel: [gipsyy1, gipsyy2, gipsyy3, gipsyy4, gipsyy5, gipsyy6],
-    stack: ["React Native", "Expo", "GraphQL", "Firebase"],
+    stack: ["React Native", "Expo", "GraphQL", "Firebase", "EAS", "geolocation", "native modules"],
     year: "2021",
     liveUrl: "https://play.google.com/store/apps/details?id=br.com.gipsyy.app",
   },
@@ -97,9 +202,54 @@ export const projects: Project[] = [
     },
     thumbnail: jogamaisLogo,
     carousel: [jogamais1, jogamais2, jogamais3],
-    stack: ["React Native", "Expo", "GraphQL", "Firebase"],
+    stack: ["React Native", "Expo", "GraphQL", "Firebase", "EAS", "geolocation", "native modules"],
     year: "2021",
     liveUrl: "https://play.google.com/store/apps/details?id=app.jogamais2",
+  },
+  {
+    id: "bluetooth-app",
+    title: "Bluetooth App",
+    category: "IoT",
+    description: {
+      en: "Bluetooth App is a mobile application focused on communication and device control via Bluetooth connectivity. The project explores the interaction between a mobile app and external devices, allowing wireless connections to be established and communication to be managed from a simple interface.",
+      es: "Bluetooth App es una aplicación móvil orientada a la comunicación y control de dispositivos mediante conectividad Bluetooth. El proyecto explora la interacción entre una aplicación móvil y dispositivos externos, permitiendo establecer conexiones inalámbricas y gestionar la comunicación desde una interfaz sencilla.",
+      pt: "Bluetooth App é um aplicativo móvel voltado para a comunicação e o controle de dispositivos por meio de conectividade Bluetooth. O projeto explora a interação entre um aplicativo móvel e dispositivos externos, permitindo estabelecer conexões sem fio e gerenciar a comunicação a partir de uma interface simples.",
+    },
+    thumbnail: bluetoothLogo,
+    carousel: [bluetooth1, bluetooth2, bluetooth3, bluetooth4],
+    stack: ["React Native", "EAS", "native modules"],
+    year: "2021",
+    liveUrl: "https://play.google.com/store/apps/details?id=com.bluetooth_app",
+  },
+  {
+    id: "boleto-tracker",
+    title: "Boleto Tracker",
+    category: "Fintech",
+    description: {
+      en: "Boleto Tracker is a mobile application developed to facilitate the tracking and control of payment slips and payment commitments. The project is aimed at centralizing information related to due dates, dates, and statuses of payment slips, helping the user maintain better control of their financial obligations.",
+      es: "Boleto Tracker es una aplicación móvil desarrollada para facilitar el seguimiento y control de boletos y compromisos de pago. El proyecto está orientado a centralizar información relacionada con vencimientos, fechas y estados de boletos, ayudando al usuario a mantener un mejor control de sus obligaciones financieras.",
+      pt: "Boleto Tracker é um aplicativo móvel desenvolvido para facilitar o acompanhamento e controle de boletos e compromissos de pagamento. O projeto visa centralizar informações relacionadas a vencimentos, datas e status dos boletos, ajudando o usuário a manter um melhor controle de suas obrigações financeiras.",
+    },
+    thumbnail: boletoLogo,
+    carousel: [boleto1, boleto2, boleto3, boleto4, boleto5, boleto6],
+    stack: ["React", "Next.js", "mongoDB", "zustand", "contextapi"],
+    year: "2020",
+    liveUrl: "https://play.google.com/store/apps/details?id=com.ingjeanpaulrojas.boletotracker",
+  },
+  {
+    id: "muv",
+    title: "MUV",
+    category: "Mobility",
+    description: {
+      en: "MUV is a mobile application focused on mobility and transportation services, designed to connect users with different travel options. The app allows users to manage travel and mobility-related information from a mobile device, offering a centralized experience.",
+      es: "MUV es una aplicación móvil orientada a servicios de movilidad y transporte, diseñada para conectar usuarios con diferentes opciones de desplazamiento. La aplicación permite gestionar información relacionada con viajes y movilidad desde un dispositivo móvil, ofreciendo una experiencia centralizada para los usuarios.",
+      pt: "MUV é um aplicativo móvel voltado para serviços de mobilidade e transporte, projetado para conectar usuários a diferentes opções de deslocamento. O aplicativo permite gerenciar informações relacionadas a viagens e mobilidade a partir de um dispositivo móvel, oferecendo uma experiência centralizada.",
+    },
+    thumbnail: muvLogo,
+    carousel: [muv1, muv2, muv3, muv4],
+    stack: ["React Native", "EAS", "geolocation", "native modules"],
+    year: "2019",
+    liveUrl: "https://play.google.com/store/apps/details?id=com.muv.customer",
   },
 ];
 

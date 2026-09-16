@@ -1,3 +1,4 @@
+import { useNavigate } from "@tanstack/react-router";
 import { ArrowUpRight } from "lucide-react";
 import { motion, useMotionValue, useTransform } from "motion/react";
 import { useRef } from "react";
@@ -25,21 +26,8 @@ export function ProjectCard(
   const y = useMotionValue(0);
   const rotateX = useTransform(y, [-100, 100], [4, -4]);
   const rotateY = useTransform(x, [-100, 100], [-4, 4]);
-  const onMove = (e: React.MouseEvent) => {
-    const r = ref.current?.getBoundingClientRect();
-    if (!r) return;
-    x.set(e.clientX - r.left - r.width / 2);
-    y.set(e.clientY - r.top - r.height / 2);
-  };
-  const onLeave = () => {
-    x.set(0);
-    y.set(0);
-  };
-  const onKeyDown = (e: React.KeyboardEvent<HTMLDivElement>) => {
-    if (e.key === "Enter" || e.key === " ") {
-      e.preventDefault();
-      props.onClick();
-    }
+  const onKeyDown = () => {
+    props.onClick();
   };
 
   return (
@@ -48,10 +36,6 @@ export function ProjectCard(
       role="button"
       tabIndex={0}
       aria-label={`View ${props.title} details`}
-      onMouseMove={onMove}
-      onMouseLeave={onLeave}
-      onKeyDown={onKeyDown}
-      onClick={props.onClick}
       style={{ rotateX, rotateY, transformPerspective: 1200 }}
       className="group relative rounded-3xl overflow-hidden glass hairline shadow-elevated cursor-pointer"
     >
@@ -90,21 +74,30 @@ export function ProjectCard(
         </div>
         <div className="mt-6 flex flex-wrap gap-4 text-[13px]">
           {props.caseStudyUrl && (
-            <a
-              href={props.caseStudyUrl}
+            <button
               className="inline-flex items-center gap-1 hover:text-foreground text-muted-foreground transition-colors"
+              onClick={onKeyDown}
             >
               {props.viewCase} <ArrowUpRight className="h-3.5 w-3.5" />
-            </a>
+            </button>
           )}
           {props.liveUrl && (
-            <a
-              href={props.liveUrl}
-              className="inline-flex items-center gap-1 hover:text-foreground text-muted-foreground transition-colors"
-              target="_blank"
+            <button
+              type="button"
+              onClick={onKeyDown}
+              className="btn-magnetic inline-flex items-center gap-2 rounded-full bg-foreground text-background text-sm font-medium px-6 py-2 hover:opacity-90 transition-opacity"
+            >
+              {props.viewCase} <ArrowUpRight className="h-3.5 w-3.5" />
+            </button>
+          )}
+          {props.liveUrl && (
+            <button
+              type="button"
+              onClick={() => window.open(props.liveUrl, "_blank")}
+              className="border border-white inline-flex items-center gap-2 rounded-full text-white text-sm font-medium px-6 py-2 hover:opacity-90 transition-opacity"
             >
               {props.viewLive} <ArrowUpRight className="h-3.5 w-3.5" />
-            </a>
+            </button>
           )}
           {props.githubUrl && (
             <a

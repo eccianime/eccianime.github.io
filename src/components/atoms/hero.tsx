@@ -92,15 +92,15 @@ export function Hero() {
             transition={{ duration: 0.8, delay: 1.1 }}
             className="mt-10 flex flex-wrap gap-3"
           >
-            {/* <MagneticButton
+            <MagneticButton
               href="#work"
               className="btn-magnetic inline-flex items-center gap-2 rounded-full bg-foreground text-background text-sm font-medium px-6 py-3.5 hover:opacity-90 transition-opacity"
             >
               {t("cta.viewProjects")} <ArrowUpRight className="h-4 w-4" />
-            </MagneticButton> */}
+            </MagneticButton>
             <MagneticButton
               href="#contact"
-              className="btn-magnetic inline-flex items-center gap-2 rounded-full bg-foreground text-background text-sm font-medium px-6 py-3.5 hover:opacity-90 transition-opacity"
+              className="btn-magnetic inline-flex items-center gap-2 rounded-full border border-foreground text-white text-sm font-medium px-6 py-3.5 hover:opacity-90 transition-opacity"
             >
               {t("cta.contactMe")}
             </MagneticButton>

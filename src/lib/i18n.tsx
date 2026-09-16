@@ -48,7 +48,7 @@ const en: Dict = {
   "projects.eyebrow": "Selected work",
   "projects.title": "Products in production.",
   "projects.subtitle": "A small selection of recent mobile and full-stack projects.",
-  "projects.viewCase": "View case study",
+  "projects.viewCase": "View Screenshots",
   "projects.viewLive": "Live",
   "projects.viewGithub": "GitHub",
 
@@ -69,7 +69,7 @@ const en: Dict = {
   "contact.message": "Tell me about your project",
   "contact.send": "Send message",
   "contact.sent": "Thanks. I'll get back to you within 24 hours.",
-  "contact.or": "Or reach out directly",
+  "contact.or": "Reach out directly",
 
   "footer.tagline": "Designing and shipping premium mobile products.",
   "footer.rights": "All rights reserved.",
@@ -119,7 +119,7 @@ const es: Dict = {
   "projects.eyebrow": "Trabajo seleccionado",
   "projects.title": "Productos en producción.",
   "projects.subtitle": "Una pequeña selección de proyectos móviles y full-stack recientes.",
-  "projects.viewCase": "Ver caso de estudio",
+  "projects.viewCase": "Ver pantallas",
   "projects.viewLive": "En vivo",
   "projects.viewGithub": "GitHub",
 
@@ -140,7 +140,7 @@ const es: Dict = {
   "contact.message": "Cuéntame sobre tu proyecto",
   "contact.send": "Enviar mensaje",
   "contact.sent": "Gracias. Te responderé en 24 horas.",
-  "contact.or": "O contáctame directamente",
+  "contact.or": "Contáctame directamente",
 
   "footer.tagline": "Diseñando y lanzando productos móviles premium.",
   "footer.rights": "Todos los derechos reservados.",
@@ -190,7 +190,7 @@ const pt: Dict = {
   "projects.eyebrow": "Trabalhos selecionados",
   "projects.title": "Produtos em produção.",
   "projects.subtitle": "Uma pequena seleção de projetos mobile e full-stack recentes.",
-  "projects.viewCase": "Ver case",
+  "projects.viewCase": "Ver telas",
   "projects.viewLive": "Ao vivo",
   "projects.viewGithub": "GitHub",
 
@@ -211,7 +211,7 @@ const pt: Dict = {
   "contact.message": "Conte sobre seu projeto",
   "contact.send": "Enviar mensagem",
   "contact.sent": "Obrigado. Retornarei em 24 horas.",
-  "contact.or": "Ou fale comigo direto",
+  "contact.or": "Fale comigo direto",
 
   "footer.tagline": "Desenhando e lançando produtos mobile premium.",
   "footer.rights": "Todos os direitos reservados.",

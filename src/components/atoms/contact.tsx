@@ -18,7 +18,7 @@ export function Contact() {
         />
 
         <div className="mt-16 grid lg:grid-cols-[1.2fr_1fr] gap-10">
-          <Reveal>
+          {/* <Reveal>
             <form
               onSubmit={(e) => {
                 e.preventDefault();
@@ -61,7 +61,7 @@ export function Contact() {
               </MagneticButton>
               {sent && <p className="text-sm text-emerald-400/90 mt-2">{t("contact.sent")}</p>}
             </form>
-          </Reveal>
+          </Reveal> */}
 
           <Reveal delay={0.1}>
             <div className="space-y-3">
