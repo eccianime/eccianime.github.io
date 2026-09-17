@@ -68,6 +68,13 @@ import boleto4 from "@/assets/projects/boleto/4.webp";
 import boleto5 from "@/assets/projects/boleto/5.webp";
 import boleto6 from "@/assets/projects/boleto/6.webp";
 
+import aphLogo from "@/assets/projects/aph/logo.png";
+import aph1 from "@/assets/projects/aph/1.png";
+import aph2 from "@/assets/projects/aph/2.png";
+import aph3 from "@/assets/projects/aph/3.png";
+import aph4 from "@/assets/projects/aph/4.png";
+import aph5 from "@/assets/projects/aph/5.png";
+
 export type Project = {
   id: string;
   title: string;
@@ -99,6 +106,20 @@ export const projects: Project[] = [
     stack: ["React Native", "Expo", "GraphQL", "Firebase", "EAS", "zustand", "geolocation"],
     year: "2026",
     liveUrl: "https://play.google.com/store/apps/details?id=com.setec.sigic",
+  },
+  {
+    id: "aph",
+    title: "APH (Atenção Pre-Hospitalar)",
+    category: "Utilities",
+    description: {
+      en: "Application made for paramedics. Accelerates the data collection process during an emergency.",
+      es: "Aplicación realizada para los paramédicos. Agiliza el proceso de colecta de datos durante una emergencia.",
+      pt: "Aplicação realizada para os paramédicos. Acelera o processo de coleta de dados durante uma emergência.",
+    },
+    thumbnail: aphLogo,
+    carousel: [aph1, aph2, aph3, aph4, aph5],
+    stack: ["React Native", "Expo", "GraphQL", "Firebase", "EAS", "zustand", "geolocation"],
+    year: "2026",
   },
   {
     id: "neon-sweeper",

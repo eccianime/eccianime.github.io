@@ -81,15 +81,14 @@ export function ProjectCard(
               {props.viewCase} <ArrowUpRight className="h-3.5 w-3.5" />
             </button>
           )}
-          {props.liveUrl && (
-            <button
-              type="button"
-              onClick={onKeyDown}
-              className="btn-magnetic inline-flex items-center gap-2 rounded-full bg-foreground text-background text-sm font-medium px-6 py-2 hover:opacity-90 transition-opacity"
-            >
-              {props.viewCase} <ArrowUpRight className="h-3.5 w-3.5" />
-            </button>
-          )}
+
+          <button
+            type="button"
+            onClick={onKeyDown}
+            className="btn-magnetic inline-flex items-center gap-2 rounded-full bg-foreground text-background text-sm font-medium px-6 py-2 hover:opacity-90 transition-opacity"
+          >
+            {props.viewCase} <ArrowUpRight className="h-3.5 w-3.5" />
+          </button>
           {props.liveUrl && (
             <button
               type="button"
